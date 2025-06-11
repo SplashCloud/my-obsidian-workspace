@@ -1,0 +1,108 @@
+{
+  "edges": [
+    {
+      "fromNode": "cb30c779a0f88e66",
+      "fromSide": "right",
+      "id": "7833dc558a344c1b",
+      "styleAttributes": {
+      },
+      "toNode": "fb46a5ec8e6aa3ba",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "66c74ec32ca0270b",
+      "fromSide": "right",
+      "id": "10d120d9c59be242",
+      "styleAttributes": {
+      },
+      "toNode": "9cc540f5f237722d",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "fb46a5ec8e6aa3ba",
+      "fromSide": "bottom",
+      "id": "4bbd24c927ad49fc",
+      "styleAttributes": {
+      },
+      "toNode": "66c74ec32ca0270b",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "66c74ec32ca0270b",
+      "fromSide": "left",
+      "id": "4f4785bd215add44",
+      "styleAttributes": {
+      },
+      "toNode": "acb15b51f0671b8d",
+      "toSide": "right"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 360,
+      "id": "cb30c779a0f88e66",
+      "styleAttributes": {
+      },
+      "text": "向量数据库\n- 存储**高维的向量数据**，这些高维的向量数据在vector index的表示就是一个点（高维空间）。\n\t- 在AI时代，这些高维的向量数据往往都是文本/图像/视频等数据通过embedding model编码生成，使得原始数据之间的某些联系仍然可以通过高维向量之间的\"距离\"来表征。\n\t- 对于这些数据点，有 Graph-based 和 Cluster-based 两种主流的方式来构建索引。\n- 向量数据库的检索过程就是在vector index中找到距离query最近的数据点。",
+      "type": "text",
+      "width": 520,
+      "x": -720,
+      "y": -360
+    },
+    {
+      "height": 460,
+      "id": "fb46a5ec8e6aa3ba",
+      "styleAttributes": {
+      },
+      "text": "Graph-based Index\n- 以图的形式来组织这些数据点，**距离相近**的数据点之间通过**有向边**相连接。\n\t- 距离相近：通过某个distance metric来衡量（L2、点积、cosine）；距离相近的点之间可以连边这个性质是embedding model保证的。\n\t- 有向边：为什么不是无向边？\n\t\t- A->B的有向边可以理解为：数据点A认为数据点B和它很相似，但是数据点B可以不这么认为，所以可以没有B->A的有向边。\n\t\t- 有向边可以使搜索过程更加具有导向性，无向边会使搜索过程更加复杂和冗余。\n- 搜索过程\n\t- 两阶段：1）从start point快速收敛到query的附近；2）在query的周围检索，慢慢远离query点。",
+      "type": "text",
+      "width": 540,
+      "x": -100,
+      "y": -360
+    },
+    {
+      "height": 200,
+      "id": "9cc540f5f237722d",
+      "styleAttributes": {
+      },
+      "text": "Solution：使用搜索半径来指导搜索过程 & 优化子图\n- 利用前面的query得到的R来优化后面的query的搜索过程\n- 如果R相差太大，则需要优化子图（添加边）",
+      "type": "text",
+      "width": 500,
+      "x": 580,
+      "y": -220
+    },
+    {
+      "height": 220,
+      "id": "66c74ec32ca0270b",
+      "styleAttributes": {
+      },
+      "text": "问题\n- 这个搜索过程不能确定什么时候会停止，可能在搜索到topk之后还需要经过很多step才能停止。\n\t- disk IO 的浪费 => search latency升高\n- 如果存在更新的话，图的结构会更差，导致前面的两阶段搜索过程的性质丢失，search latency会升高？",
+      "type": "text",
+      "width": 480,
+      "x": -70,
+      "y": 280
+    },
+    {
+      "height": 560,
+      "id": "75896bcd6d4c627f",
+      "styleAttributes": {
+      },
+      "text": "FreshDiskANN Evaluation\n- 硬件：\n\t- mem-mc(64-vcores)测试in-memory index的recall-latency以及更新规则\n\t- ssd-mc(48-cores, 96-threads, 3.2TB-SSD)测试完整的FreshDiskANN系统\n- 数据集\n\t- 1M: SIFT1M(128), GIST1M(960), DEEP1M(98)\n\t- 1B: SIFT1B(128)\n\n在SSD上维护billion级别的index，服务qps在千级别的insert, delete和search若干天，index的数量稳定在800M左右\n- 参数：\n\t- R=64, Lc=75, $\\alpha$=1.2\n\t- B=32 bytes(PQ)\n\t- M=30M(TempIndex的数据量)，内存占用大概在13GB=30,000,000*(128B(自身数据)+256B(邻居信息)+100B(锁等结构的开销))\n\t- T=40 threads在后台用于StreamingMerge\n- ",
+      "type": "text",
+      "width": 600,
+      "x": 1160,
+      "y": -920
+    },
+    {
+      "height": 160,
+      "id": "acb15b51f0671b8d",
+      "styleAttributes": {
+      },
+      "text": "如果不考虑更新的话，引入这个search radius的提升并没有很显著(10%-20%)\n所以针对的场景也就变成了优化更新场景下图索引的搜索性能。",
+      "type": "text",
+      "width": 340,
+      "x": -560,
+      "y": 380
+    }
+  ]
+}

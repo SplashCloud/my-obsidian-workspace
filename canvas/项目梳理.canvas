@@ -1,0 +1,15 @@
+{
+  "edges": [
+  ],
+  "nodes": [
+    {
+      "height": 675,
+      "id": "e09017a2bb8bfdce",
+      "label": "Start Slide",
+      "type": "group",
+      "width": 1200,
+      "x": -600,
+      "y": -337
+    }
+  ]
+}

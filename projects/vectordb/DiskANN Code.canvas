@@ -1,0 +1,71 @@
+{
+  "edges": [
+    {
+      "fromNode": "d7ca8c1a508589b8",
+      "fromSide": "top",
+      "id": "8255dc1dd8ff820f",
+      "styleAttributes": {
+        "arrow": "triangle-outline"
+      },
+      "toNode": "3c35099e3728240b",
+      "toSide": "bottom"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 280,
+      "id": "8f146e1c94c5e3ec",
+      "styleAttributes": {
+      },
+      "text": "Index\n- index_config\n- data_store\n\t- 存储数据的缓冲区\n- graph_store\n\t- 邻接矩阵存储数据点之间的联系\n- pq_data_store\n",
+      "type": "text",
+      "width": 320,
+      "x": -1020,
+      "y": -580
+    },
+    {
+      "height": 380,
+      "id": "aae847a64f747581",
+      "styleAttributes": {
+      },
+      "text": "search_disk_index\n- load query\n- load groundtruth\n- PQFlashIndex->load() 加载inde数据\n- PQFlashIndex::cache_bfs_levels()\n- PQFlashIndex::load_cache_list() 将 num_nodes_to_cache 个数据点及其邻居读到内存中\n- WarmUp阶段\n- ",
+      "type": "text",
+      "width": 400,
+      "x": -560,
+      "y": -680
+    },
+    {
+      "height": 250,
+      "id": "d7ca8c1a508589b8",
+      "styleAttributes": {
+      },
+      "text": "SSDQueryScratch\n- coord_scratch\n- sector_scratch\n- sector_idx\n- visited\n- retset\n- full_retset",
+      "type": "text",
+      "width": 360,
+      "x": 400,
+      "y": -760
+    },
+    {
+      "height": 250,
+      "id": "3c35099e3728240b",
+      "styleAttributes": {
+      },
+      "text": "AbstractScratch\n- \\_aligned_query_T\n\t- 存储要搜索的query数据（维度对齐）\n- \\_pq_scratch",
+      "type": "text",
+      "width": 360,
+      "x": 240,
+      "y": -1160
+    },
+    {
+      "height": 340,
+      "id": "abd36dd4fc29960c",
+      "styleAttributes": {
+      },
+      "text": "PQFlashIndex::cached_beam_search()",
+      "type": "text",
+      "width": 380,
+      "x": -100,
+      "y": -660
+    }
+  ]
+}

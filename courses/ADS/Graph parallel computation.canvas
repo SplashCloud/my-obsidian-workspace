@@ -1,0 +1,139 @@
+{
+  "edges": [
+    {
+      "fromNode": "0f46e12fbaf9d148",
+      "fromSide": "right",
+      "id": "6d6b0689d3751ee0",
+      "styleAttributes": {
+      },
+      "toNode": "0f36b0d42437cd7d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0f46e12fbaf9d148",
+      "fromSide": "bottom",
+      "id": "784874652c0dc52d",
+      "styleAttributes": {
+      },
+      "toNode": "a44c243fc6dc54c8",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "a44c243fc6dc54c8",
+      "fromSide": "right",
+      "id": "bf1f2f5fff100d11",
+      "styleAttributes": {
+      },
+      "toNode": "d081675e0d701a95",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b7aa351dc78474c8",
+      "fromSide": "right",
+      "id": "7db3b3f15b90e22b",
+      "styleAttributes": {
+      },
+      "toNode": "0cfa37940fa9c22e",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b7aa351dc78474c8",
+      "fromSide": "bottom",
+      "id": "21c87126f8f80f6a",
+      "styleAttributes": {
+      },
+      "toNode": "a973f0de17bbe837",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "0f36b0d42437cd7d",
+      "fromSide": "right",
+      "id": "b0266da9b4978e8d",
+      "styleAttributes": {
+      },
+      "toNode": "b7aa351dc78474c8",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 300,
+      "id": "0f46e12fbaf9d148",
+      "styleAttributes": {
+        "textAlign": null
+      },
+      "text": "- map-reduce过于简单\n- 图算法\n- 针对图结构的数据，使用map-reduce的编程框架可以实现，但是效果很差\n\t- dependent的数据表示存在大量冗余\n- 退回MPI/pthreads来实现并行\n- 设计对应的framework和编程模型 - Graph structure computation",
+      "type": "text",
+      "width": 460,
+      "x": -660,
+      "y": -450
+    },
+    {
+      "file": "courses/ADS/lec12-graph.pdf",
+      "height": 360,
+      "id": "0f36b0d42437cd7d",
+      "styleAttributes": {
+      },
+      "subpath": "#page=51",
+      "type": "file",
+      "width": 440,
+      "x": -80,
+      "y": -480
+    },
+    {
+      "height": 435,
+      "id": "d081675e0d701a95",
+      "styleAttributes": {
+      },
+      "text": "GraphLab\n- 对于分布式的情况（node的邻居位于不同的机器）\n\t- 建立 ghost vertex 作为远端机器上的node的replication\n- pure message -> replication in local memory\n- 异步执行，按需执行 => 支持局部收敛\n- scheduler的开销很大，尤其是在分布式场景上\n- consistency model\n\t- full consistency\n\t\t- 相邻edge和相邻vertex不可共享\n\t- edge consistency\n\t\t- 相邻vertex不可共享\n\t- vertex consistency\n\t\t- 最弱的consistency",
+      "type": "text",
+      "width": 500,
+      "x": -100,
+      "y": -15
+    },
+    {
+      "height": 500,
+      "id": "a44c243fc6dc54c8",
+      "styleAttributes": {
+      },
+      "text": "Pregel(Google)\n- 编程模型：==**\"think like a vertex\"**==\n- Insipred by: *Bulk Synchronous Parallel Model*\n\t- compute -> communicate -> compute -> ...\n- Master-Slave architecture(same as MapReduce)\n- pure message (==PUSH==)\n\t- 每一个node都会接收上一轮邻居发送过来的消息\n\nBSP的问题\n- 不同的workload\n\t- 对于page rank，每个迭代过程所有node都会参与计算\n\t- 但是对于每个迭代过程只需要局部node参与计算的类型，BSP会存在计算的浪费\n- performance\n\t- 由于barrier的存在，系统中最慢的机器会影响整体的性能",
+      "type": "text",
+      "width": 520,
+      "x": -690,
+      "y": -47
+    },
+    {
+      "height": 380,
+      "id": "b7aa351dc78474c8",
+      "styleAttributes": {
+      },
+      "text": "图计算中的fault tolerance\n- 挑战\n\t- 细粒度的复杂数据依赖\n\t- 迭代的计算方式\n- checkpoint\n\t- 可以利用BSP中Barrier以及图计算中iteration特点",
+      "type": "text",
+      "width": 360,
+      "x": 480,
+      "y": -240
+    },
+    {
+      "height": 180,
+      "id": "0cfa37940fa9c22e",
+      "styleAttributes": {
+      },
+      "text": "相关的fault tolerance工作\n- 重新计算\n\t- MapReduce：不需要考虑\n\t- Spark：考虑数据依赖，\n- ",
+      "type": "text",
+      "width": 360,
+      "x": 1000,
+      "y": -260
+    },
+    {
+      "height": 700,
+      "id": "a973f0de17bbe837",
+      "styleAttributes": {
+      },
+      "text": "利用系统中本身存在的replication\n- 重用现有的replication => small overhead\n- replicas分布在整个系统中 => fast recovery\n\nreplicas缺少master上的metadata\n- 需要将一部分replicas升级为mirror（开始的时候确定 决定容错的程度 区别于checkpoints）\n\n对于selfish vertex（只依赖其他顶点的数据）\n- 不需要增加replication\n- 直接重新计算，对其他顶点没有影响\n\nRebirth\n- 需要standby机器\n- 其他node一起恢复crash的node\n\t- master恢复replica\n\t- mirror恢复master和replica\n- 会存在大量消息传递\n\nMigration\n- 不需要standby机器\n- 将crash机器上的计算均摊上其他的正常的机器上\n",
+      "type": "text",
+      "width": 440,
+      "x": 580,
+      "y": 260
+    }
+  ]
+}

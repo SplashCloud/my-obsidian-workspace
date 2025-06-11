@@ -1,0 +1,621 @@
+{
+  "edges": [
+    {
+      "fromNode": "197e6f8e1f6f82e9",
+      "fromSide": "left",
+      "id": "72f4b8ec38935a34",
+      "styleAttributes": {
+      },
+      "toNode": "12afa351a8e55f2f",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "104e6dea84768520",
+      "fromSide": "left",
+      "id": "c00d97e5477dc96c",
+      "styleAttributes": {
+      },
+      "toNode": "12afa351a8e55f2f",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "3f88d1732fdbde9d",
+      "fromSide": "left",
+      "id": "729c23f43a14603a",
+      "styleAttributes": {
+      },
+      "toNode": "0b388c374fb2c5b9",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "e94ef9286ca32f58",
+      "fromSide": "left",
+      "id": "a0eb01d422f04f81",
+      "styleAttributes": {
+      },
+      "toNode": "0b388c374fb2c5b9",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "08dac94fe1ee07a6",
+      "fromSide": "top",
+      "id": "83e42a2c39545db0",
+      "styleAttributes": {
+      },
+      "toNode": "c9a77419ac6d2d7b",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "2b97539974cd0da6",
+      "fromSide": "left",
+      "id": "981bf491d2aebf4b",
+      "styleAttributes": {
+      },
+      "toNode": "a98a52ec5efc7d22",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "0d09ecf2e00757ff",
+      "fromSide": "top",
+      "id": "41e1ad94e1efe8cb",
+      "styleAttributes": {
+      },
+      "toNode": "a98a52ec5efc7d22",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "13d395311d1e078f",
+      "fromSide": "top",
+      "id": "44c8ac10f2210cd8",
+      "styleAttributes": {
+      },
+      "toNode": "0b388c374fb2c5b9",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "d658ab09db4c869b",
+      "fromSide": "left",
+      "id": "18577c19f87e2198",
+      "styleAttributes": {
+      },
+      "toNode": "739499972e9fbd23",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "12afa351a8e55f2f",
+      "fromSide": "left",
+      "id": "ec61248082cc702a",
+      "styleAttributes": {
+      },
+      "toNode": "8270bd7a5d3fd1bd",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "12afa351a8e55f2f",
+      "fromSide": "bottom",
+      "id": "e5f2f7c5affaf5f8",
+      "styleAttributes": {
+      },
+      "toNode": "279a2a2a4fdac607",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "53922ce5b924ecce",
+      "fromSide": "top",
+      "id": "3b44b7d288539822",
+      "styleAttributes": {
+      },
+      "toNode": "5ef4f4cb1f18d5e9",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "b2191b5e9ff2af84",
+      "fromSide": "left",
+      "id": "e02f7df48a6492e5",
+      "styleAttributes": {
+      },
+      "toNode": "5ef4f4cb1f18d5e9",
+      "toSide": "right"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 2160,
+      "id": "08fbbad67db6b460",
+      "label": "Graph",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 3160,
+      "x": -4360,
+      "y": -3120
+    },
+    {
+      "height": 2580,
+      "id": "f9eac1149cefa846",
+      "label": "Network",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1960,
+      "x": -4360,
+      "y": -560
+    },
+    {
+      "height": 1480,
+      "id": "e833bb0e9d45cf5c",
+      "label": "NP",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 2040,
+      "x": -720,
+      "y": -3120
+    },
+    {
+      "height": 1231,
+      "id": "97f744469dbaafaa",
+      "label": "LP",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1800,
+      "x": -480,
+      "y": -1191
+    },
+    {
+      "height": 1057,
+      "id": "6c4933659ae9b47c",
+      "label": "Approximation Algorithm",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 1560,
+      "x": -2160,
+      "y": -560
+    },
+    {
+      "height": 1437,
+      "id": "3273fdf12dbb6ece",
+      "label": "DP",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 860,
+      "x": -2160,
+      "y": 730
+    },
+    {
+      "color": "1",
+      "height": 900,
+      "id": "3f88d1732fdbde9d",
+      "styleAttributes": {
+      },
+      "text": "Red-Bule Greedy Algorithm\n- 不断应用红蓝规则直到所有边都被着色，蓝色的边形成一个最小生成树\n\t- <span style=\"color: red\">红色规则</span>\n\t\t- $C$是一个没有红边的环\n\t\t- 选择其中cost最大的一条边涂成红色\n\t- <span style=\"color: blue\">蓝色规则</span>\n\t\t- $D$是一个没有蓝边的cutset\n\t\t- 选择其中cost最小的一条边涂成蓝色\n- Color Invariant: 存在一个$MST(V, T^*)$包含<span style=\"color: blue\">每一条蓝边</span>，且不包含红色\n\t- 使用数学归纳法证明\n\t- base: 当没有边被染色时，满足情况\n\t- 假设在应用蓝色规则前满足情况\n\t\t- 假设被选中的cutset是$D$，$f$是要被涂成蓝色的边\n\t\t- 如果 $f \\in T^*$，满足情况\n\t\t- 否则，将$f$加入$T^*$形成一个fundamental cycle $C$\n\t\t\t- $e \\in C$是$D$中另一条边\n\t\t\t- $e$没有被涂色且$c_e \\ge c_f$\n\t\t\t\t- $e \\in T^*$ => 没有涂红色\n\t\t\t\t- 应用蓝色规则 => 没有涂蓝色且$c_e \\ge c_f$\n\t\t- $T^* \\cup \\{f\\} - \\{e\\}$满足条件\n\t- 假设在应用红色规则前满足情况\n\t\t- 假设被选中的环是$C$，$f$是要被涂成红色的边\n\t\t- 如果$f \\notin T^*$，满足情况\n\t\t- 否则，$T^* - \\{f\\}$是一个割，假设$D$是对应的fundamental cutset\n\t\t\t- 考虑$e \\in D$是环$C$的另一条边\n\t\t\t- $e$没有被涂色且$c_e \\le c_f$\n\t\t\t\t- $e \\notin T^*$ => 没有涂蓝色\n\t\t\t\t- 应用红色规则 => 没有涂红色且$c_e \\le c_f$\n\t\t- $T^* \\cup \\{e\\} - \\{f\\}$满足条件",
+      "type": "text",
+      "width": 600,
+      "x": -1920,
+      "y": -2340
+    },
+    {
+      "height": 1060,
+      "id": "0b388c374fb2c5b9",
+      "styleAttributes": {
+      },
+      "text": "Minimum Spanning Trees\n\n- 割(cut)和割集(cutset)\n\t- cut：一个划分，将点集划分为两个非空的子集$S$和$V-S$\n\t- cutset：只有一个端点在$S$的边集\n- 一个cycle和一个cutset相交于<span style=\"color: red\">偶数</span>条边\n\t![[Pasted image 20250527004749.png]]\n---\n- $H=(V,T)$是无向图$G=(V,E)$的一个子图，如果$H$是无环且连通的，那么就是$G$的一个<span style=\"color: red\">生成树</span>。\n\t- $H$是$G$的一个生成树\n\t- $\\iff$ $H$是无环且连通的\n\t- $\\iff$ $H$是无环且有$|V|-1$条边\n\t- $\\iff$ $H$是连通且有$|V|-1$条边\n\t- $\\iff$ $H$是最小连通的：再减一条边就不连通\n\t- $\\iff$ $H$是最大无环的：多加一条边就会引入环\n- 最小生成树：边的cost之和最小的生成树\n---\n- Fundamental Cycle\n\t- $e \\in E: T \\cup \\{e\\}$形成一个环$C$\n\t- $f \\in C: T \\cup \\{e\\} - \\{f\\}$是一个生成树\n- Fundamental Cutset\n\t- $f \\in T: T - \\{f\\}$包含两个连通组件（是一个割），$D$是对应的割集\n\t- $e \\in D: T - \\{f\\} \\cup \\{e\\}$是一个生成树",
+      "type": "text",
+      "width": 520,
+      "x": -2560,
+      "y": -3040
+    },
+    {
+      "color": "5",
+      "height": 450,
+      "id": "bce478d759baf11c",
+      "styleAttributes": {
+      },
+      "text": "Assignment1.5\n![[Pasted image 20250601154200.png]]\n- 先将$E$按照权重从大到小排序，时间复杂度为$O(|E|\\log|E|)$\n- 按照从大到小的顺序依次从图中删除边，并使用DFS检查$(u,v)$之间是否存在一条路径\n\t- 如果存在，则继续删除边\n\t- 如果不存在，那么这次删除的边就是$\\beta^*(u,v)$\n- 证明\n\t- 由于剩下的图中不存在从$u$到$v$的路径，所以剩下的边中也就不存在$\\beta(u,v)$；那么$\\beta^*(u,v)$存在于删除的边中，而最后一次删除的边的权重是最小的，所以就是$\\beta^*(u,v)$\n",
+      "type": "text",
+      "width": 580,
+      "x": -2920,
+      "y": -1890
+    },
+    {
+      "height": 820,
+      "id": "2b97539974cd0da6",
+      "styleAttributes": {
+      },
+      "text": "DFS in graph\n```python\nExpore(G, u)\n\tvisited(u) = True\n\tPREVISIT(u)\n\tfor (u, v) in E:\n\t\tif visited(v) is not True:\n\t\t\tExpore(G, v)\n\tPOSTVISIT(u)\n```\n- 在`PREVISIT(u)`和`POSTVISIT(u)`中可以设置$pre(u)/[_u$和$post(u)/]_u$\n- 对于边$(u,v)$来说\n\t- $[_u \\quad [_v \\quad ]_v \\quad ]_u$表示tree/forward edge\n\t- $[_v \\quad [_u \\quad ]_u \\quad ]_v$表示back edge\n\t- $[_v \\quad ]_v \\quad [_u \\quad ]_u$表示cross edge(只能从右子树指向左子树)\n- <span style=\"color: red\">有向图中有环当且仅当DFS找到一个back edge</span>\n\t- $\\rightarrow$: 有向图中存在环，则存在一条路径$v_1\\rightarrow v_2\\rightarrow,...,\\rightarrow v_k\\rightarrow v_1$，不妨设在DFS的过程中上述节点的访问顺序为：$v_i, v_{i+1}, ..., v_k, v_1, ..., v_{i-1}$，$(v_{i-1},v_i)$是一条back edge。\n\t- $\\leftarrow$: DFS中找到一个back edge $(u,v)$，根据定义$v$是$u$的祖先节点，那么必然存在从$v$到$u$的路径$v \\rightarrow ... \\rightarrow u$，back edge正好从这条路径的终点指向起点，所以形成了一个环。\n- DAG 和 拓扑序\n\t- 在DAG中，每条边都会导向一个$post$更小的顶点\n\t- 在DAG中：Linearizability $\\Leftrightarrow$ Acyclicity $\\Leftrightarrow$ absense of back edges\n\t- post number最大的是source，post number最小的是sink",
+      "type": "text",
+      "width": 520,
+      "x": -3120,
+      "y": -3040
+    },
+    {
+      "color": "5",
+      "height": 420,
+      "id": "d658ab09db4c869b",
+      "styleAttributes": {
+      },
+      "text": "- 需要$O(n)$的时间复杂度\n- 随机检查一个顶点，计算其度数$d_v$（$O(n)$）\n\t- 如果$d_v = 0 / n-1$，那么$G$就不是一个scorpion\n\t- 如果$d_v=n-2$（body），找到没有和$v$相连的顶点，判断是否为sting；如果是的话进一步判断sting的邻居是否是tail\n\t- 如果$d_v=2$（tail或者others），则其中一个邻居必须为body\n\t- 如果$d_v=1$（sting或者others），检查唯一的邻居是否是tail或者body\n\t- 如果$d_v$是其他值（others）\n\t\t- 将$v$的邻居作为$A$（包含body），其他非邻居节点作为$B$（包含sting和tail）\n\t\t- 对于任意的$v_1 \\in A, v_2 \\in B$\n\t\t\t- 如果$v_1, v_2$相邻，那么删除$v_2$；否则删除$v_1$\n\t\t\t- 当$A$空了时，$B$中剩下的就是sting",
+      "type": "text",
+      "width": 540,
+      "x": -2880,
+      "y": -1400
+    },
+    {
+      "color": "5",
+      "height": 280,
+      "id": "13d395311d1e078f",
+      "styleAttributes": {
+      },
+      "text": "Assignment1.6\n- 给定一个图，找到最小瓶颈生成树（MBST）\n\t- 每一个MST都是MBST，反之不成立\n\t- 假设MST $T$ 不是 MBST。考虑MBST $T'$，令$T$的瓶颈边为$e$，$T'$的瓶颈边为$e'$，所以有$cost_e \\gt cost_{e'}$\n\t- 删除$e$，$T$被分隔成$A$和$B$\n\t- 在$T'$中一定存在一条边$e''$，且$cost_{e''} \\lt cost_{e'} \\lt cost_e$，那么$T \\cup \\{e''\\} - e$构成的生成树的权重之和小于$T$，矛盾。",
+      "type": "text",
+      "width": 580,
+      "x": -2300,
+      "y": -1360
+    },
+    {
+      "color": "5",
+      "height": 520,
+      "id": "0d09ecf2e00757ff",
+      "styleAttributes": {
+      },
+      "text": "Assignment1.2\n- 找到一个解决2SAT问题的**高效**算法\n\t- 假设有$n$个变量，$m$个子句，构建一个$G=(V,E)$\n\t\t- $V = \\{x_1, x_2, ..., x_n, \\bar{x_1}, \\bar{x_2}, ..., \\bar{x_n}\\}$\n\t\t- 对于每个子句可以得到两条边，比如$(x_1 \\cup x_2) \\rightarrow \\{ \\bar{x_1} => x_2, \\bar{x_2} => x_1 \\}$\n\t- 找到这个图中的所有强连通部件，检查其中是否同时存在一个变量和它的否定\n\t- 时间复杂度：$O(|E|+|V|)$\n\nAssignment1.3\n- $G=(V,E)$是有向图，给出一个**线性时间**的算法来判断从$s$出发是否存在一个**walk**能够访问至少$k$个不同的顶点\n\t- 从$s$出发找到所有的可达顶点，如果数量少于$k$，直接返回False\n\t- 在这些可达顶点上找到所有的SCCs，每个SCC都压缩成一个顶点（代表$|S|$个不同顶点）\n\t- 在新图上执行拓扑排序，找到最长的路径",
+      "type": "text",
+      "width": 580,
+      "x": -3540,
+      "y": -1880
+    },
+    {
+      "color": "5",
+      "height": 240,
+      "id": "739499972e9fbd23",
+      "styleAttributes": {
+      },
+      "text": "Assignment1.4\n![[Pasted image 20250601171135.png]]",
+      "type": "text",
+      "width": 600,
+      "x": -3560,
+      "y": -1280
+    },
+    {
+      "height": 700,
+      "id": "e94ef9286ca32f58",
+      "styleAttributes": {
+      },
+      "text": "Prim‘s Algorithm\n- 从一个顶点（$S$）开始，不断增加cost最小的且有一个端点位于$S$的边，重复$|V| - 1$次\n\t- 时间复杂度：$O(|E|\\log |V|)$\n- 本质上是贪心策略：一直应用蓝色规则\n\nKruskal's Algorithm\n- 将$E$按照cost从小到大排序，然后按照顺序依次加入边直到产生环\n\t- 时间复杂度：$O(|E|\\log|E|)$\n\nReverse-Delete Algorithm\n- 将$E$按照从大到小排序，然后按照顺序删除边直到$T$变得不连通\n\nBoruvka's Algorithm\n- （不断应用蓝色规则）一开始将每个点都看作一个连通组件，不断找到不同连通组件之间cost最小的边。\n\t- 时间复杂度：$O(|E|\\log|V|)$\n\nBoruvka-Prim Algorithm\n- Prim算法适合稠密的图，Boruvka算法适合稀疏的图。\n- Boruvka算法（压缩图版本）在执行过程中会将图变得更加稠密，所以后面阶段上可以使用Prim算法。\n- 时间复杂度：$O(|E|\\log \\log |V|)$",
+      "type": "text",
+      "width": 600,
+      "x": -1920,
+      "y": -3080
+    },
+    {
+      "height": 1060,
+      "id": "a98a52ec5efc7d22",
+      "styleAttributes": {
+      },
+      "text": "Strongly Connected Components\n- connected的定义\n\t- 在有向图中，如果存在从u到v的路径，也存在从v到u的路径，那么u和v就是connected\n- 强连通部件\n\t![[Pasted image 20250527001736.png]]\n- Lemma1：在DFS中得到最大的post number的顶点一定在source SCC中\n- Lemma2：如果$C$和$C'$是两个SCC，且存在一条边从$C$中的一个顶点指向$C'$中的一个顶点，那么$C$中最大的post number一定大于$C'$中最大的post number\n- 如何输出每一个SCC：如果从sink SCC中的某个点开始进行DFS，则可以刚好只访问到这个组件\n\t- 如何找到sink SCC？\n\t\t- 将原图$G$中的所有边翻转得到$G^{R}$\n\t\t- 通过DFS可以得到$G^R$中的source SCC，也就是$G$中的sink SCC（Lemma1）\n\t- 第一个组件找到后如何继续？\n\t\t- 删除找到的SCC，找到$G^R$中剩下的最大post number的顶点（位于剩下的$G$的sink SCC）",
+      "type": "text",
+      "width": 460,
+      "x": -3640,
+      "y": -3040
+    },
+    {
+      "color": "5",
+      "height": 640,
+      "id": "08dac94fe1ee07a6",
+      "styleAttributes": {
+      },
+      "text": "Assignment1.1\n\n- 证明Dijkstra算法正确性\n\t- 使用数学归纳法+反证法\n\t- 假设源点为$s$，已经得到最短路径的顶点集合为$S$，其他顶点集合为$Q$（位于优先队列中）算法不断从$Q$中取出距离源点$s$最近的顶点，加入$S$并更新其邻居\n\t- 当$|S|=1$时，$S$中只有源点$s$，$dist() = 0$显然是从$s$出发的最短路径\n\t- 假设在算法某一步之前，$S$中所有顶点的最短路径均已被找到\n\t- 现在，从$Q$取出加入$S$的顶点是$u$，所以$dist(u)$是$Q$中最小的，下面证明$dist(u)$就是从$s$出发到达$u$的最短路径。\n\t\t- 假设还存在一条路径$P'$，$length(P') \\lt dist(u)$\n\t\t- 由于$s$在$S$中，$u$在$Q$中，所以$P'$中必然存在一条边$(x,y), x \\in S, y \\in Q$\n\t\t- 所以$length(P') = length(s, ..., x) + l(x,y) + length(y, ..., u)$\n\t\t\t- $=dist(x) + l(x,y) + length(y,...u)$\n\t\t\t- $\\ge dist(y)$\n\t\t\t\t- 因为$x \\in S$，在$x$加入$S$的时候更新过其邻居，所以有$dist(y) \\le dist(x) + l(x,y)$\n\t\t- 所以：$dist(y) \\le length(P') \\lt dist(u)$\n\t\t- 而$y, u \\in Q$，存在$dist(u) \\le dist(y)$，矛盾\n\t\t- 得证：$dist(u)$就是从$s$出发到达$u$的最短路径",
+      "type": "text",
+      "width": 620,
+      "x": -4260,
+      "y": -1880
+    },
+    {
+      "height": 1040,
+      "id": "c9a77419ac6d2d7b",
+      "styleAttributes": {
+      },
+      "text": "Intro\n- Master Theorem![[Pasted image 20250601125915.png]]\n\t- $T(n) = aT(n/b)+O(n^d)$\n\t- $=a^2T(n/d^2)+aO((n/b)^d) + O(n^d)$\n\t- $=(a^k / b^{kd} + ... + a/b^d + 1) O(n^d), k = \\log_b n$\n- 排序算法\n\t- Merge, Quick, Insert, ...\n\t- 排序算法的最小时间复杂度\n\t\t- 将排序想象成一个决策树，每个叶节点就是数组的一种排列情况，共$n!$个叶子节点\n\t\t- 走到排好序的排列的最短路径就是$\\log(n!) \\le O(n \\log n)$\n- 广度优先搜索\n\t- 从一个顶点出发找到图中其他顶点距离这个顶点的<span style=\"color: red\">最短距离</span>\n\t- 时间复杂度：$O(|E|+|V|)$\n\t- ***Lemma***: 对于$d = 0, 1, ...$，都存在一个时刻有：（<span style=\"color: red\">可以使用数学归纳法证明</span>）\n\t\t- $\\{ u | dist(u, s) \\le d \\}$的距离都被正确设置\n\t\t- 其他顶点的距离都是$\\infty$\n\t\t- 队列中只包含距离为$d$的顶点\n- 最短距离\n\t- BFS处理的是每条边的长度一样的图，如果图中的边的长度/cost不一样的话，就需要其他算法\n\t- <mark style=\"background-color: #1EFF00; color: black\">Dijkstra's Shortest Path Algorithm</mark>\n```python\ndef dijkstra(G, s):\n\tdists = [INF for _ in V]\n\tdists[s] = 0\n\tpq = PriorityQueue(<V, dists>)\n\twhile not pq.empty():\n\t\tu = pq.deletemin()\n\t\tfor (u, v) in E:\n\t\t\tif dists[v] > dists[u] + l(u,v):\n\t\t\t\tdists[v] = dists[u] + l(u,v)\n\t\t\t\tpq.update(<v, dists[v]>)\n\t\n```",
+      "type": "text",
+      "width": 560,
+      "x": -4260,
+      "y": -3040
+    },
+    {
+      "height": 780,
+      "id": "316840eb55e8d3bd",
+      "styleAttributes": {
+      },
+      "text": "Complexity Classes\n- $P$问题：set of **decision problems** for which there exists a poly-time algorithm.\n- $NP$问题：set of decision problems for which there exists a poly-time certifier $C(s, t)$.\n\t- 给定一个问题实例$s$，和一个解$t$，存在多项式时间算法能够验证$t$是否是$s$的解\n- $EXP$问题：Decision problems for which there exists an exponential-time algorithm\n- $P \\subseteq NP \\subseteq EXP$\n- $\\text{NP-complete}$：一个$NP$问题($Y$)，$\\forall X \\in NP, X \\le_P Y$\n\t- 如果$Y \\in \\text{NP-complete}$，那么$Y \\in P \\iff P = NP$\n\t\t- $\\Rightarrow$: \n\t\t\t- $\\forall X \\in NP, X \\le_P Y \\Rightarrow X \\in P \\Rightarrow NP \\subseteq P$\n\t\t\t- $P \\subseteq NP \\Rightarrow P = NP$\n\t\t- $\\Leftarrow$: trivial\n- $\\text{NP-hard}$：一个难问题$Y$，$\\forall X \\in NP, X \\le_P Y$\n- $\\text{co-NP}$：如果一个问题在$NP$中，那么它的补问题就在$\\text{co-NP}$中\n- $\\text{co-NP-complete} \\subseteq \\text{NP-hard}$\n---\n\n![[Pasted image 20250602230818.png]]",
+      "type": "text",
+      "width": 540,
+      "x": -660,
+      "y": -2540
+    },
+    {
+      "height": 420,
+      "id": "61f12f5a20703800",
+      "styleAttributes": {
+      },
+      "text": "Reductions on various problems\n- 归约（Reduction）![[Pasted image 20250601185513.png]]\n\t- 问题$X$可以在多项式时间内被归约到$Y$：$X \\le_{P} Y$\n\t- 如果$X \\le_P Y$并且$Y$可以在多项式时间内被解决，那么$X$也可以在多项式时间内被解决\n\t- 如果$X \\le_P Y$并且X不能在多项式时间内被解决，那么$Y$也不能在多项式时间内被解决【未知 归约到 已知】\n\t- 如果$X \\le_P Y \\land Y \\le_P X \\rightarrow X \\equiv_P Y$",
+      "type": "text",
+      "width": 480,
+      "x": -660,
+      "y": -3070
+    },
+    {
+      "height": 790,
+      "id": "01e43a33e8a0e4b0",
+      "styleAttributes": {
+      },
+      "text": "- Independent Set $\\equiv_P$ Vertex Cover $\\equiv_P$ Clique\n\t- $S$是一个size为$k$的独立集 $\\iff$ $V-S$是一个size为$n-k$的顶点覆盖\n\t- $\\Rightarrow$: $(u,v) \\in E$ => $u,v$不会同时属于$S$ => $u \\in V-S \\cup v \\in V-S \\cup both$ => 所以$V-S$是一个顶点覆盖\n\t- $\\Leftarrow$: $(u,v) \\in E$ => $u \\in V-S \\cup v \\in V-S$ => $u,v$不会同时属于$S$ => 所以$S$是一个独立集\n\t- $G$上的独立集就是$G$的补图的Clique\n\t\t- 补图：原来没边连上边，原来有边不连边\n\t- Independent Set：两两顶点没有边相连；Vertex Cover：$E$中每条边至少一个顶点在集合中；Clique：两两顶点都有边相连![[Pasted image 20250601193107.png]]\n---\n- Vertex Cover $\\le_P$ Set Cover\n\t- $G=(V,E)$有一个size为k的vertex cover $\\iff$ $(U, S, k)$有一个size为k的set cover\n\t- $G$中一个顶点关联的边可以组成全集$E$的一个子集；$S$中的子集可以表示图中一个顶点所关联的边的集合\n\t- $\\Rightarrow$: $X \\subset V$是一个vertex cover => $Y=\\{S_u | u \\in X\\}$就是一个k大的set cover \n\t- $\\Leftarrow$: $Y \\subset S$是一个set cover => $X = \\{v | S_v \\in Y\\}$是一个k大的vertex cover",
+      "type": "text",
+      "width": 600,
+      "x": -60,
+      "y": -3070
+    },
+    {
+      "height": 520,
+      "id": "13b86bbdb4ce92e5",
+      "styleAttributes": {
+      },
+      "text": "$\\text{Decision Problem} \\equiv_P \\text{Search Problem} \\equiv_P \\text{Optimization Problem}$\n- $\\text{Decision Problem}$: 是否存在一个$size \\le k$的vertex cover\n- $\\text{Search Problem}$: 找到一个$size \\le k$的vertex cover\n- $\\text{Optimization Problem}$: 找到最小的vertex cover\n\n$\\text{Decision Problem} \\equiv_P \\text{Search Problem}$\n- 以$\\text{Vertex Cover}$问题为例\n- $\\le_P$: trivial. 决策问题是搜索问题的特殊情况\n- $\\ge_P$: \n\t- 找到一个$v$使得$G - \\{v\\}$有一个$size \\le k-1$的vertex cover，那么$v$肯定在要找的vertex cover中\n\t- 在$G-\\{v\\}$找到$size \\le k-1$的vertex cover（递归）\n\n$\\text{Search Problem} \\equiv_P \\text{Optimization Problem}$\n- 以$\\text{Vertex Cover}$问题为例\n- $\\le_P$: trivial. 将优化问题的解的大小和搜索问题中需要的大小进行比较即可\n- $\\ge_P$: 不断搜索$size \\le k, k-1, k-2, ...$的vertex cover直到搜索不到",
+      "type": "text",
+      "width": 600,
+      "x": 640,
+      "y": -2420
+    },
+    {
+      "height": 570,
+      "id": "468da02445b0b3f7",
+      "styleAttributes": {
+      },
+      "text": "- $SAT \\le_P 3SAT$\n\t- 大问题归约到小问题的特例\n\t- $(a_1 \\lor a_2 \\lor ...\\lor a_n)$\n\t- $\\iff (a_1 \\lor a_2 \\lor x_1) \\land (\\overline{x_1} \\lor a_3 \\lor x_2) ... \\land (\\overline{x_{n-3}} \\lor a_{n-1} \\lor a_n)$\n- $3SAT \\le_P$ Independent Set \n\t- 给定一个3SAT的实例$\\Phi$，可以构造出一个独立集的实例$(G, k)$使得其有一个$k=|\\Phi|$大小的独立集$\\iff$$\\Phi$被满足\n\t- 如何构造：假设3SAT问题中有$n$个变量，$m$个子句。那么可以构造一个$G$：每个子句形成一个三角形，每个变量和它的否定之间连接一条边。![[Pasted image 20250602144825.png]]\n\t- $\\Rightarrow$: 独立集$S$必定在每个三角形中只存在一个顶点，令顶点对应的literal为真，剩下的literal和指派保持一致即可满足原实例$\\Phi$\n\t- $\\Leftarrow$: 如果$\\Phi$被满足，那么每个子句中选择一个literal为真，即可在对应的图中得到一个独立集。",
+      "type": "text",
+      "width": 600,
+      "x": 640,
+      "y": -3070
+    },
+    {
+      "height": 211,
+      "id": "4b1b05e3eb8777dc",
+      "styleAttributes": {
+      },
+      "text": "Simplex Algorithm",
+      "type": "text",
+      "width": 440,
+      "x": 20,
+      "y": -1171
+    },
+    {
+      "height": 1171,
+      "id": "a92a5e4553f2a807",
+      "styleAttributes": {
+      },
+      "text": "使用LP表示不同的问题\n- 最短路径\n\t- $\\min \\sum_{e \\in E} l_{e}x_{e}$\n\t- $\\sum_{e \\in \\delta(S)} x_{e} \\ge 1, S \\in \\mathcal{S}$\n\t- $x_{e} = \\{0,1\\}$\n\t\t- 可以进一步放松成$x_{e} \\ge 0$\n- 最大流-最小割\n\t- 最大流\n\t\t- $\\max f_{ts}$\n\t\t\t- 增加一条边$(t,s)$\n\t\t- $f_{ij} \\le c_{ij}, (i,j) \\in E$\n\t\t- $\\sum_{(w,i) \\in E} f_{wi} - \\sum_{(i,z) \\in E} f_{iz} \\le 0, i \\in V$\n\t\t- $f_{ij} \\ge 0, (i,j) \\in E$\n\t- <span style=\"color: red\">最小割（对偶）</span>\n\t\t- $d_{ij}$表示一条边是否在割集中；$p_i$表示一个顶点是否在源点所在的集合中\n\t\t- $\\min \\sum c_{ij}d_{ij}$\n\t\t- $d_{ij}-p_i+p_j \\ge 0$\n\t\t- $p_s - p_t \\ge 1$\n\t\t- $d_{ij} \\ge 0$\n\t\t- $p_{i} \\ge 0$\n\t- 如何转换\n\t\t- 原规划中的约束对应于对偶规划中的变量\n\t\t\t- 引入了两个变量$d_{ij}$和$p_i$\n\t\t- 构建对偶规划的目标函数，原规划中的约束右侧项是目标函数中的系数\n\t\t\t- $\\sum c_{ij}d_{ij} + \\sum 0 \\cdot p_i$\n\t\t- 原规划中的变量是$f_{ij}$和$f_{ts}$，对应于对偶规划的约束\n\t\t\t- <span style=\"color: red\">分析原规划中每个约束中每个变量的系数 => 对偶规划的变量（对应于原规划的约束）的系数</span>\n\t\t\t- **对于任意一条普通边 $(i,j)\\in E$ (即非虚拟边 fts​):**\n\t\t\t    - 在约束 $f_{ij}​\\le c_{ij}$​ 中， $f_{ij}$​ 的系数是 `+1`。对应项为 $1\\cdot d_{ij}​$。\n\t\t\t    - 在节点 $i$ 的流量守恒中， $f_{ij}$​ 是流出项，系数是 `-1`。对应项为 $−1\\cdot p_i$​。\n\t\t\t    - 在节点 $j$ 的流量守恒中， $f_{ij}$​ 是流入项，系数是 `+1`。对应项为 $1\\cdot p_i$​。\n\t\t\t    - 在原始目标函数 $z=f_{ts}$​ 中，$f_{ij}$​ 的系数是 `0`。\n\t\t\t    - 组合起来，得到对偶约束：$d_{ij}​−p_i​+p_j​\\ge0$。\n\t\t\t- **对于虚拟返回边变量 $f_{ts}$​:**\n\t\t\t    - 我们假设这条虚拟边没有容量限制，所以**不存在** $f_{ts}\\le c_{ts}$​ 这样的原始约束。因此，没有 $d_{ts}$​ 这个对偶变量。\n\t\t\t    - 在节点 $t$ 的流量守恒中，$f_{ts}$​ 是流出项，系数是 `-1`。对应项为 $−1\\cdot p_t$​。\n\t\t\t    - 在节点 $s$ 的流量守恒中，$f_{ts}​$ 是流入项，系数是 `+1`。对应项为 $1\\cdot p_s​$。\n\t\t\t    - 在原始目标函数 $z=f_{ts}$​ 中，fts​ 的系数是 `1`。\n\t\t\t    - 组合起来，得到对偶约束：$p_s​−p_t​\\ge 1$。\n",
+      "type": "text",
+      "width": 780,
+      "x": 500,
+      "y": -1171
+    },
+    {
+      "height": 1100,
+      "id": "8186f9f1f5ba2e5e",
+      "styleAttributes": {
+      },
+      "text": "Duality\n- 如何理解对偶\n\t- 从\"生产问题\"视角来看，原问题回答如何配置资源生产产品可以使得收益最高；那么对偶问题就是如何对资源定价，可以使得成本最小。\n\t- 原问题：A(200单位), B(300单位), C(400单位)三种原材料生产X(1元), Y(6元)两种产品，X需要1单位A+1单位C，Y需要1单位B+1单位C，如何生产收益最高？\n\t\t- $\\max x_1+6x_2$\n\t\t- $x_1 \\le 200$\n\t\t- $x_2 \\le 300$\n\t\t- $x_1 + x_2 \\le 400$\n\t\t- $x_1, x_2 \\ge 0$\n\t- 对偶问题：\n\t\t- $\\min 200y_1 + 300y_2 + 400y_3$\n\t\t- $y_1 + y_3 \\ge 1$\n\t\t- $y_2 + y_3 \\ge 6$\n\t\t- $y_1, y_2, y_3 \\ge 0$\n- 如何求解对偶线性规划？\n\t- 目标函数转换：max => min\n\t- 目标函数系数：原规划的约束条件右侧项变为对偶规划目标函数的系数\n\t- 约束条件右侧项：原规划的目标函数的系数变为对偶规划约束条件的右侧项\n\t- 原规划的约束对应对偶规划的变量\n\t- ...",
+      "type": "text",
+      "width": 440,
+      "x": -460,
+      "y": -1171
+    },
+    {
+      "height": 260,
+      "id": "3c26931f6ded615d",
+      "styleAttributes": {
+      },
+      "text": "Standard LP\n- 目标函数是求**最小值**\n\t- $\\max {\\times -1} => \\min$\n- 所有的变量都是**非负**\n\t- $x \\Rightarrow x^{+} - x^{-} \\land x^{+} \\ge 0, x^{-} \\ge 0$\n- 所有的约束都是**等式**\n\t- $x \\le 100 \\Rightarrow x + s = 100 \\land s \\ge 0$",
+      "type": "text",
+      "width": 440,
+      "x": 20,
+      "y": -920
+    },
+    {
+      "height": 920,
+      "id": "b2191b5e9ff2af84",
+      "styleAttributes": {
+      },
+      "text": "Case2: Set Cover\n\n基数集合覆盖\n- 贪心算法：每次选择能够覆盖最多未被覆盖元素的子集\n- 假设总共有$n$个元素，最优覆盖有$OPT$个集合，贪心算法最多使用$\\ln n \\cdot OPT$个集合\n\t- （贪心算法选中的集合可能在$OPT$个集合中，也可能不在）\n\t- 假设第$t$轮迭代后还有$n_t$个元素没有被覆盖\n\t\t- 如果前$t-1$轮迭代没有选中$OPT$中的集合，那么肯定存在集合包含$\\ge n_t / OPT$个元素\n\t\t- 如果前$t-1$轮迭代选中了$OPT$中的集合，那么肯定存在集合包含$\\ge n_t / (OPT-k)$个元素（$k$是选中的集合数）\n\t\t- 总之，存在集合包含$\\ge n_t / OPT$个元素\n\t- 所以第$t+1$轮迭代，覆盖的元素个数为\n\t\t- $n_t - n_{t+1} \\ge n_k / OPT$\n\t\t- $n_{t+1} \\le n_t - n_t / OPT = n_t (1 - \\frac{1}{OPT})$\n\t\t- $n_t \\le n_0(1-\\frac{1}{OPT})^t$\n\t- （$1-x \\le e^{-x}, \\forall x$，当$x=0$取等号）\n\t- $n_t \\lt n \\cdot e ^ {-\\frac{t}{OPT}} = 1 \\Rightarrow t = \\ln n \\cdot OPT$\n---\ngeneralize的集合覆盖\n- 贪心算法：当每个子集都被赋予权值之后，每次就要选择average cost最小的集合\n\t- 假设某一轮迭代结束选中了$C$个集合的元素，那么对于集合$S$来说，其中元素的average price = $\\frac{c(S)}{|S - C|}$\n- 将元素按照被算法选中的顺序排列：$e_1, e_2, ..., e_n$，那么存在$price(e_k) \\le OPT / (n - k + 1)$\n\t- 当$e_k$被覆盖的迭代中，未被覆盖的元素至少还有$n-(k-1)$个\n\t- 所以$price(e_k) \\le OPT / |\\overline{C}| \\le OPT / (n-k+1)$\n\t\t- 证明类似于上面的（存在集合包含$\\ge n_t / OPT$个元素）\n- factor为$H_n = 1 + \\frac{1}{2} + ... + \\frac{1}{n}$",
+      "type": "text",
+      "width": 580,
+      "x": -1360,
+      "y": -523
+    },
+    {
+      "height": 800,
+      "id": "14b84432e10c8e3e",
+      "styleAttributes": {
+      },
+      "text": "考试类型\n- 7题：10 $\\times$ 2 , 15 $\\times$ 4, 20 $\\times$ 1\n\t- 每个session一题\nGraph\n- 定理证明\n\t- DAG, SCC\n\t- cut theorem\n\t- shortest path\n\t- theorem on trees\nDP\n- 算法设计\n- 递推公式的入口\n- 结果的位置（多维表格）\n- 时间空间复杂度\n网络流\n- 定理证明\n\t- 最大流-最小割理论\n- 归约\nLP\n- Primal 和 Dual\n- 问题表示（如何将一个问题表示为线性规划）\nNP\n- NPC问题\n- NP问题\n近似算法\n- 算法设计\n- 近似保证因子证明\n- tight example",
+      "type": "text",
+      "width": 460,
+      "x": -1120,
+      "y": 730
+    },
+    {
+      "height": 260,
+      "id": "5ef4f4cb1f18d5e9",
+      "styleAttributes": {
+      },
+      "text": "求解近似算法的步骤\n- $A \\le k \\cdot OPT$\n\t- $k$是近似的因子，可以是常数、$\\log n$、$n$\n- 找一个近似算法\n- 证明approximation factor\n- 找到一个tight example\n\t- 要找到**一类例子**，而不能是一个特例",
+      "type": "text",
+      "width": 600,
+      "x": -2100,
+      "y": -523
+    },
+    {
+      "height": 480,
+      "id": "53922ce5b924ecce",
+      "styleAttributes": {
+      },
+      "text": "Case1: 极大matching是基数顶点覆盖问题的一个近似算法，并且factor=2\n- 找到一个近似算法：求解极大matching。\n\t- 通过贪心算法，选中一条边就去掉对应的两个顶点，直到最后不能选中边为止。\n\t- 此时得到选中的matching中所有边的顶点构成了一个vertex cover\n- 对于任何matching都有：$|M| \\le OPT$\n- 而找到的matching得到的vertex cover的大小为：$|C| = 2 |M| \\le 2 OPT$\n- 几个问题：\n\t- 有更小的approximation factor吗？ => <span style=\"color: red\">Tight Example</span>\n\t\t- 找到一类例子满足：$A = 2OPT$\n\t\t- 对应完全二分图$K_{n,n}$，通过近似算法得到的解为$2n$，但是$OPT=n$（二分图的一边顶点）\n\t- 针对近似算法的nature($|M| \\le OPT$)能不能设计出更好的保证？\n\t\t- 完全图$K_n$，且n是奇数\n\t\t- 以$K_3$为例，就是一个三角形，极大matching是1，但是顶点覆盖是2，$|M| = \\frac{1}{2} \\cdot OPT$",
+      "type": "text",
+      "width": 600,
+      "x": -2100,
+      "y": -143
+    },
+    {
+      "height": 340,
+      "id": "5d8730c5104d8385",
+      "styleAttributes": {
+      },
+      "text": "Dynamic Programming 求解 最短路径\n- $dist(v,i)$：从v到t的路径中，使用$\\le i$条边的最短路径长度\n- 求解的目标：$dist(v, n-1)$\n- 如果最短路径的边数$\\le i-1$条\n\t- $dist(v, i) = dist(v, i-1)$\n- 如果最短路径的边数恰好是$i$条\n\t- $dist(v,i) = \\min_{(v,w)\\in E} \\{ dist(w,i-1) + l(v,w) \\}$\n- 所以整个递推公式就是：\n\t$dist(v,i) = \\min \\{dist(v, i-1), \\min_{(v,w)\\in E} \\{ dist(w,i-1) + l(v,w) \\}\\}$\n\t再增加一些边界值",
+      "type": "text",
+      "width": 560,
+      "x": -2120,
+      "y": 767
+    },
+    {
+      "height": 910,
+      "id": "197e6f8e1f6f82e9",
+      "styleAttributes": {
+      },
+      "text": "<span style=\"color: red\">Max-Flow Min-Cut Theorem</span>\n\n$f$是任意流，$(A, B)$是任意割\n- $val(f) = \\sum_{out-of-A} f(e) - \\sum_{in-to-A} f(e)$\n\t- $val(f) = \\sum_{out-of-s} f(e) - \\sum_{in-to-s} f(e)$\n\t- $= \\sum_{v \\in A} (\\sum_{out-of-v} f(e) - \\sum_{in-to-v} f(e))$\n\t\t- 因为除了$s,t$外，其他顶点都是流入=流出\n\t\t- 相当于在第一个式子上加了一堆 $0$\n\t- $= \\sum_{out-of-A} f(e) - \\sum_{in-to-A} f(e)$\n- $val(f) \\le cap(A,B)$\n\t- $val(f) = \\sum_{out-of-A} f(e) - \\sum_{in-to-A} f(e) \\le \\sum_{out-of-A} c(e) = cap(A,B)$\n- 如果$val(f) = cap(A,B)$，那么$f$就是最大流，$(A,B)$就是最小割\n\t- $\\forall f^{*}, val(f^{*}) \\le cap(A,B) = val(f)$\n\t- $\\forall (A^*, B^*), cap(A,B) = val(f) \\le cap(A^*,B^*)$\n\n---\n\n<span style=\"color: red\">Augmenting Path Theorem</span>\n对于任意一个流$f$，以下三条是等价的\n1. 存在一个割$(A,B)$使得，$val(f)=cap(A,B)$\n2. $f$是最大流\n3. 对于$f$不存在增广路径\n[1->2]：上面已证\n[2->3] 反证法\n- 假设还存在增广路径，那么$f$还可以增加，所以$f$就不是最大流，矛盾\n[3->1]\n- 不存在增广路径，说明在$G_f$中源点和汇点不连通\n- 选择从源点$s$出发可达的顶点作为$A$，其他顶点作为$B$\n\t- 那么$s \\in A, t \\notin A$\n- $val(f) = \\sum_{out-of-A} f(e) - \\sum_{in-to-A} f(e)$\n- $= \\sum_{out-of-A} c(e) - \\sum_{in-to-A} 0 = cap(A,B)$\n",
+      "type": "text",
+      "width": 620,
+      "x": -3140,
+      "y": -535
+    },
+    {
+      "height": 620,
+      "id": "104e6dea84768520",
+      "styleAttributes": {
+      },
+      "text": "Bipartite Matching\n- Matching：给定$G=(V,E)$，找到边集的子集$M \\subseteq E$使得每个顶点最多出现在一条边上\n- Bipartite Matching：给定一个二分图$G=(L \\cup R, E)$，找到其中的**最大matching**\n\t- 二分图的Perfect Matching：每个顶点恰好出现在一条边上\n![[Pasted image 20250608101408.png]]\n- $G$中的大小为$k$的matching对应于一个$G'$中一个大小为$k$的整数流\n\t- $\\Rightarrow$：大小$k$的matching中$k$条边，且每条边的流量都为1，所以$val(f)=k$\n\t- $\\Leftarrow$：如果有一个大小为$k$的整数流，选择那些从$L$到$R$的$f(e)=1$的边$M$\n\t\t- 不会顶点出现在两条边上，因为$L$中的顶点的流入流量最多为1，$R$中的顶点的流出流量最多为1。\n\t\t- $val(f)=k$，考虑割$(A=\\{s\\} \\cup L, B=\\{t\\} \\cup R)$，$val(f) = \\sum_{out-of-A} f(e)$，所以$|M|=k$\n\n",
+      "type": "text",
+      "width": 600,
+      "x": -3140,
+      "y": 420
+    },
+    {
+      "height": 700,
+      "id": "12afa351a8e55f2f",
+      "styleAttributes": {
+      },
+      "text": "Max-Flow and Min-Cut Problems \n- cut$(A, B)$的capacity是所有从A到B的边（A的所有出边）的容量\n- 给定一个图$G=(V,E,s,t,c)$\n\t- 最大流：找到从源点$s$到汇点$t$的最大流量\n\t- 最小割：找到一个割$S$，$s \\in S, t \\in V - S$，这个割的capacity最小\n- $\\forall v \\in V - \\{s,t\\}, \\sum_{out-of-v} f(e) = \\sum_{in-to-v} f(e)$\n- 贪心算法求解最大流问题\n\t- 不断找到$s \\rightarrow t, f(e) \\le c(e)$的路径进行增广\n\t- 陷入局部最优，没有fall-back的方式\n---\nFord-Fulkerson 算法\n- 和贪心算法的区别之处在于：在残差网络$G_f$中寻找增广路径$P$\n\t- 对于原图$G$的一个流$f$，残差网络$G_f = (V, \\{e|f(e)\\lt c(e)\\} \\cup \\{e^{reverse}|c(e^{reverse}\\gt 0)\\})$\n\t- 找到这个增广路径$P$的bottleneck capacity $\\delta$，遍历$P$中的每一条边$e$\n\t\t- 如果是正向边，$f(e) \\leftarrow f(e) + \\delta$\n\t\t- 如果是反向边，$f(e^{reverse}) \\rightarrow f(e^{reverse}) - \\delta$",
+      "type": "text",
+      "width": 500,
+      "x": -3780,
+      "y": -457
+    },
+    {
+      "height": 160,
+      "id": "279a2a2a4fdac607",
+      "styleAttributes": {
+      },
+      "text": "Edmond-Karp's Algorithm\n- 每次选择最短的增广路径\n- 最短增广路径不会减少\n- 最多经过$|E|$次增广，最短增广路径严格增加",
+      "type": "text",
+      "width": 500,
+      "x": -3800,
+      "y": 340
+    },
+    {
+      "color": "5",
+      "height": 380,
+      "id": "4f26e541d734e879",
+      "styleAttributes": {
+      },
+      "text": "2、给出一个efficient的算法，使得能够找到网络流$G$中存在的critical edge（减少它的容量会减少整个网络最大流）\n- 先使用Ford-Fulkerson算法得到最大流，以及对应的剩余网络$G_f$\n- $G_f$中从源点出发可达的顶点作为$A$，得到一个割$(A,V-A)$，对应的割集中都是critical edge\n\n3、单元容量的网络流$G$（$c_e=1$），给定一个参数k，目标是删除k条边，使得尽可能多地减少最大流，给出一个多项式时间复杂度的算法解决这个问题。\n- 先找到最大流/最小割，得到剩余网络$G_f$\n- 从而可以得到一个割$(A, V-A)$，假设这个割集的大小为g，那么可以从其中减去k条边，得到新的最小割的大小为$\\{0, g-f\\}$",
+      "type": "text",
+      "width": 580,
+      "x": -3640,
+      "y": 1100
+    },
+    {
+      "color": "5",
+      "height": 340,
+      "id": "804e23dbf000d3f2",
+      "styleAttributes": {
+      },
+      "text": "4、找到cost最小的且流量$\\ge 90\\% val(f_{max})$的网络流（每条边上都有cost）\n- 先使用最大流算法找到最大流为$V_{max}$\n- 设定：$V_{target} = V_{max} \\times 0.9$\n- 运行最小成本流算法\n\t- 建立一个流量为0的网络\n\t- 循环执行以下操作，直到总流量达到$V_{target}$\n\t\t- <span style=\"color: red\">在剩余网络中，以cost为权重，找到从s到t的最短路径（改变增广目标）</span>\n\t\t- 沿着这条路径尽可能地增加流量\n\t\t- 累加成本且更新剩余网络",
+      "type": "text",
+      "width": 600,
+      "x": -3020,
+      "y": 1100
+    },
+    {
+      "color": "5",
+      "height": 420,
+      "id": "680176e3e3f1567f",
+      "styleAttributes": {
+      },
+      "text": "扔鸡蛋\n- $f(n,k)$：使用$k$个鸡蛋在$n$层楼中找到$l$的最小掉落次数\n- $f(n,k) = \\min_{1\\le x(在x层丢) \\le n} (1 + \\max(f(x-1,k-1)(碎了), f(n-x,k)(没碎)))$\n\n最长回文子串\n- $dp[i][j]$：$s[i:j]$是否是一个回文子串\n- $dp[i][j] =dp[i+1][j-1] \\land (s[i]=s[j])$\n\n拆分单词\n- 有字符串$s[n]$和字典$word[m]$\n- $dp[i](0 \\le i \\le n)$：字符串$s[0:i-1]$能够被拆分的可能性的数量\n- $dp[i] = \\sum_{k=0}^{i-1} (dp[k] \\cdot \\sum_{j=0}^{m-1} (s[k:i-1] == word[j]) )$\n\n",
+      "type": "text",
+      "width": 620,
+      "x": -2120,
+      "y": 1207
+    },
+    {
+      "color": "5",
+      "height": 360,
+      "id": "2ab5efdb63cac969",
+      "styleAttributes": {
+      },
+      "text": "6、$P$个项目，每个有收益$p_i$（正数或者负数）；图$G = (P, E)$，$(i,j) \\in E$表示项目j是项目i的先决条件；给出算法求解最大利润$A \\subseteq P, profit(A) = \\sum_{i \\in A}p_i$\n- 构造图$G'$\n\t- 增加源点和汇点$s,t$\n\t- 如果$p_i \\lt 0$，连接$(i,t), c(e)=-p_i$\n\t- 如果$p_i \\gt 0$，连接$(s, i), c(e)=p_i$\n\t- 其他在原图中的边，设置容量为$c(e) = \\infty$\n- 计算最小割$(A, B)$，$A - \\{s\\}$就是最优的项目集合",
+      "type": "text",
+      "width": 600,
+      "x": -3020,
+      "y": 1480
+    },
+    {
+      "color": "5",
+      "height": 380,
+      "id": "714e39d678bca61e",
+      "styleAttributes": {
+      },
+      "text": "5、有向网络$G=(V,E)$，每条边都有一个容量$c(e)$，另外，每个顶点还有一个demand-$d_v$：如果$d_v \\gt 0$表示需要$d(v)$的流量；如果$d_v \\lt 0$表示v可以供给$-d_v$的流量，给出一个算法判断是否存在一个分配满足：\n1. $\\forall e \\in E,0 \\le f(e) \\le c(e)$\n2. $\\forall v \\in V, f^{in}(v) - f^{out}(v) = d_v$\n构建一个新的网络$G'$\n- 增加一个新的源点和汇点$s',t'$\n- 对于$d_v \\lt 0$的顶点，建立边$(s', v)$且容量为$-d_v$\n- 对于$d_v \\gt 0$的顶点，建立边$(v,t')$且容量为$d_v$\n- 如果$G'$中存在最大流$val(f_{max}) = \\sum_{v:d_v\\gt 0}d_v = \\sum_{v:d_v \\lt 0}-d_v$，那么原图中存在满足条件的分配",
+      "type": "text",
+      "width": 580,
+      "x": -3640,
+      "y": 1520
+    },
+    {
+      "color": "5",
+      "height": 420,
+      "id": "246cdc8543095b0c",
+      "styleAttributes": {
+      },
+      "text": "三划分问题\n- $dp(m, s_i, s_j, s_k)$：表示是否存在一个划分将$\\{a_1, ..., a_m\\}$划分成三个不相交的子集$I,J,K$使得$\\sum_{i \\in I} a_i = s_i, \\sum_{j \\in J}a_j = s_j, \\sum_{k \\in K}a_k = s_k$\n- $dp(m, s_i, s_j, s_k) = dp(m-1, s_i-a_m, s_j, s_k) \\lor dp(m-1, s_i, s_j-a_m, s_k) \\lor dp(m-1, s_i, s_j, s_k-a_m)$\n\n凑硬币\n- $F(c)$: 表示凑出面值为$c$至少需要的硬币数\n- $F(c) = 1 + \\min_{1 \\le i \\le n}F(c-x_i)$\n\n二划分问题\n- $dp[i][j]$: 表示在前i个元素是否存在和为j的子集\n- $dp[i][j] = dp[i-1][j] \\land dp[i-1][j-n[i]]$",
+      "type": "text",
+      "width": 760,
+      "x": -2120,
+      "y": 1707
+    },
+    {
+      "color": "5",
+      "height": 600,
+      "id": "9f2bd7649144ad7c",
+      "styleAttributes": {
+      },
+      "text": "1、<span style=\"color: red\">证明：$G=(L \\cup R ,E)$是一个二分图，最大matching的大小 = 最小顶点覆盖的大小</span>\n- 最大matching为$M$，最小顶点覆盖为$C$\n- 容易证明：$|M| \\le |C|$\n\t- 对于matching中的每一条边，都至少有一个顶点在vertex cover中\n- 只要证明：$|M| \\ge |C|$\n\t- 在二分图$G$中增加源点$s$和汇点$t$构造$G'$，其中的最大流为$val(f_{max})=|M|$\n\t- 假设$(S,T)$是$G'$的最小割\n\t\t- 从最小割 => 顶点覆盖\n\t- 构造一个顶点覆盖$C' = (L \\cap S) \\cup (R \\cap T), |C'| = |L \\cap S| + |R \\cap T|$\n\t\t- 证明构造的$C'$是一个顶点覆盖\n\t\t- 假设存在一条边$(u,v), u \\notin (L \\cap S), v \\notin (R \\cap T)$\n\t\t- 可以得到$u \\in S, v \\in T$，所以$(u,v)$是割集中的一条边，但是这条边的容量是$\\infty$，和最小割矛盾，所以不存在这样的边！\n\t- 计算最小割$(S,T)$的大小，割集存在以下几种类型的边：\n\t\t- $s \\rightarrow u, u \\in T$：每条边的容量为1，且$u \\in L \\cap T$\n\t\t- $v \\rightarrow t, v \\in S$：每条边的容量为1，且$v \\in R \\cap S$\n\t\t- 所以$|(S,T)| = |L \\cap T| + |R \\cap S| = |C'|$\n\t- $|M| = |Cut_{min}| = |C'| \\ge |C|$\n\t- 得证！",
+      "type": "text",
+      "width": 640,
+      "x": -4320,
+      "y": 1100
+    },
+    {
+      "height": 1460,
+      "id": "8270bd7a5d3fd1bd",
+      "styleAttributes": {
+      },
+      "text": "Capacity-Scaling Algorithm\n\n- naive的Fold-Fulkerson算法对于权重相差过大的情况，需要非常多轮迭代才能结束。如下图，每次只能增广1。![[Pasted image 20250607215931.png]]\n- 使用一个scaling的参数：$\\Delta$，每轮迭代只保留容量$\\ge \\Delta$的边，每轮迭代结束之后，$\\Delta = \\Delta / 2$\n- 如果capacity-scaling算法结束，那么得到的$f$是一个最大流\n\t- 算法终止的时候，$\\Delta = 1$，$G_f(\\Delta)$就是原来的$G_f$，在其上没有增广路径，根据前面的增广路径定理，得到的$f$就是最大流。\n- Lemma1: 有$1 + \\lfloor{\\log_2 C}\\rfloor$个scaling阶段\n\t- 初始化时：$C/2 \\lt \\Delta \\le C$\n- Lemma2: 每个scaling阶段最多有$2|E|$次增广\n\t- 在$\\Delta$-Scaling阶段开始的时候找到的最大流是$f$(也是上一个阶段$2\\Delta$-Scaling阶段的结束)\n\t- 根据Lemma3 => $val(f^{*}) \\le val(f) + |E| \\cdot (2 \\Delta)$\n\t- $\\Delta$-Scaling阶段每次增广最多只能增加$\\Delta$\n\t- 所以最多只有$2|E|$次增广（假设该阶段结束就得到最大流了）\n- Lemma3: 在一次$\\Delta$-scaling阶段的末尾得到的$f$，存在$val(f^{*}) \\le val(f) + |E| \\cdot \\Delta$\n\t-  只要证明存在一个割$(A,B)$，有$cap(A,B) \\le val(f) + |E| \\cdot \\Delta$\n\t\t- 因为对于任意的$f$和$(A,B)$都有$val(f) \\le cap(A,B)$\n\t- 在$\\Delta$-scaling阶段的末尾，$G_f(\\Delta)$中已经不存在增广路径了，所以在$G_f({\\Delta}$)中源点和汇点不连通了\n\t\t- 将从源点$s$出发可达的顶点作为$A$，其他顶点作为$B$，就形成了一个割$(A,B)$\n\t\t- 其中$s \\in A, t \\notin A$\n\t- （$val(f)$针对的是原图，而不是剩余网络）$val(f) = \\sum_{out-of-A} f(e) - \\sum_{in-to-A} f(e)$\n\t- $\\ge \\sum_{out-of-A} (c(e) - \\Delta) - \\sum_{in-to-A} \\Delta$\n\t\t- 剩余网络中：$c(e)-f(e) \\le \\Delta$\n\t- $\\ge \\sum_{out-of-A} c(e) - \\sum_{out-of-A} \\Delta - \\sum_{in-to-A} \\Delta$\n\t- $\\ge cap(A,B) - |E| \\cdot \\Delta$\n\t- 得证",
+      "type": "text",
+      "width": 460,
+      "x": -4320,
+      "y": -487
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "edges": [
+    {
+      "fromNode": "e743be059a6ac2fd",
+      "fromSide": "bottom",
+      "id": "9ce3a45780e06893",
+      "styleAttributes": {
+      },
+      "toNode": "7d3749cf685264da",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "06a6291f9295dde5",
+      "fromSide": "left",
+      "id": "06aec3dc3f935bab",
+      "styleAttributes": {
+      },
+      "toNode": "53d4679c3901c402",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "89833e60a597d515",
+      "fromSide": "left",
+      "id": "fa936984bdf3b132",
+      "styleAttributes": {
+      },
+      "toNode": "53d4679c3901c402",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "53d4679c3901c402",
+      "fromSide": "top",
+      "id": "dcb3124ee9e373e7",
+      "styleAttributes": {
+      },
+      "toNode": "a8ee8e4f1d58af8b",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "53d4679c3901c402",
+      "fromSide": "left",
+      "id": "95e7431ce32ac68b",
+      "styleAttributes": {
+      },
+      "toNode": "e743be059a6ac2fd",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "e743be059a6ac2fd",
+      "fromSide": "left",
+      "id": "b99356c5705824f1",
+      "styleAttributes": {
+      },
+      "toNode": "39fe49ec361ee7c5",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "7d3749cf685264da",
+      "fromSide": "left",
+      "id": "32552b576433eaef",
+      "styleAttributes": {
+      },
+      "toNode": "24e13fd479f519dc",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "24e13fd479f519dc",
+      "fromSide": "left",
+      "id": "0865354d40d913b3",
+      "styleAttributes": {
+      },
+      "toNode": "2d4667c718f311a9",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "7f0f421b79217121",
+      "fromSide": "top",
+      "id": "0b1e1be5e924eb82",
+      "styleAttributes": {
+      },
+      "toNode": "2d4667c718f311a9",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "2d4667c718f311a9",
+      "fromSide": "left",
+      "id": "d6de302e259859ad",
+      "styleAttributes": {
+      },
+      "toNode": "a814b55c1d63a5ca",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "2d4667c718f311a9",
+      "fromSide": "left",
+      "id": "64fb2a2d8c8c9366",
+      "styleAttributes": {
+      },
+      "toNode": "cd2415e3166d9565",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "2d4667c718f311a9",
+      "fromSide": "top",
+      "id": "33d96682315a6ff1",
+      "styleAttributes": {
+      },
+      "toNode": "309be7c7749fe6f5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "39fe49ec361ee7c5",
+      "fromSide": "left",
+      "id": "7747abe53402cfeb",
+      "styleAttributes": {
+      },
+      "toNode": "309be7c7749fe6f5",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "309be7c7749fe6f5",
+      "fromSide": "top",
+      "id": "6981eb0233f41682",
+      "styleAttributes": {
+      },
+      "toNode": "71ee3ba86e33fa10",
+      "toSide": "bottom"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 120,
+      "id": "53d4679c3901c402",
+      "styleAttributes": {
+      },
+      "text": "<span style=\"color: red\">compute-IO的顺序是否必要？</span>\n- 如果不严格遵循这个依赖顺序，是否会对搜索的正确性造成影响？",
+      "type": "text",
+      "width": 340,
+      "x": -1520,
+      "y": -540
+    },
+    {
+      "color": "4",
+      "height": 520,
+      "id": "e743be059a6ac2fd",
+      "styleAttributes": {
+      },
+      "text": "$\\text{PipeSearch}$: 将计算和IO pipeline起来\n![[Pasted image 20250516141400.png]]\n- 使用异步、并行的IO\n- 整体搜索的推进不需要等待ongoing IO的完成\n\t- 完成了一个IO，就将当前IO读取的顶点邻居更新进入候选集\n\t- 当IO pipeline没有打满的时候，就基于当前内存中的候选集选择下一个需要读取的顶点",
+      "type": "text",
+      "width": 400,
+      "x": -2045,
+      "y": -740
+    },
+    {
+      "height": 560,
+      "id": "7d3749cf685264da",
+      "styleAttributes": {
+      },
+      "text": "![[Pasted image 20250516142826.png]]\n![[Pasted image 20250516142845.png]]\n- latency最低和throughput最高不能同时达到（在不同的W取到）\n\t- 较大的W（较宽的IO pipeline）会导致throughput降低（无论对于BFS还是PipeSearch都是成立的）\n- <span style=\"color: red\">相比于BFS，PipeSearch的throughput会更低一些。</span>",
+      "type": "text",
+      "width": 400,
+      "x": -2040,
+      "y": -120
+    },
+    {
+      "color": "1",
+      "height": 660,
+      "id": "309be7c7749fe6f5",
+      "styleAttributes": {
+      },
+      "text": "\n```python\n\ndef opt_pipesearch(G, q, W):\n\tW = 4\n\tP = InMemorySearch(q)\n\tE = {} # explored set\n\tU = {} # un-explored set\n\tQ = {} # size=W io pipeline\n\twhile P / E != {}:\n\t\t# IO Pipeline is not full\n\t\t# issue one IO request based on\n\t\t# current in-memory candidate pool\n\t\tif Q.size() < W:\n\t\t\tu = select_top_from(P/E, 1)\n\t\t\tQ.insert(u)\n\t\t{ # overlap with IO\n\t\t\tv = select_top_from(U, 1)\n\t\t\tU.remove(v)\n\t\t\tE.insert(v)\n\t\t\tfor nbr in v.nbrs:\n\t\t\t\tP.insert(<nbr, Distance(nbr, q)>)\n\t\t\tP = reserve_to(P, l)\n\t\t\tF = get_finished_io(Q)\n\t\t\tW = AdaptPipelineWidth(P, F)\n\t\t\tQ.remove(F)\n\t\t\tU.insert(F)\n\t\t}\n\n```",
+      "type": "text",
+      "width": 520,
+      "x": -3320,
+      "y": -760
+    },
+    {
+      "color": "4",
+      "height": 280,
+      "id": "2d4667c718f311a9",
+      "styleAttributes": {
+      },
+      "text": "三点优化：\n- 使用内存中的小图来进行搜索起始点的优化\n\t- 加速Approach Phase（对宽流水线不友好）\n- <span style=\"color: blue\">在IO pipeline没有打满的时候，只增加一个IO请求，而不是将pipeline打满</span>\n- <span style=\"color: green\">搜索过程中动态调整W</span>\n\t- 在Converge Phase增加流水线宽度，并不断调整",
+      "type": "text",
+      "width": 440,
+      "x": -3820,
+      "y": -120
+    },
+    {
+      "color": "2",
+      "height": 380,
+      "id": "a8ee8e4f1d58af8b",
+      "styleAttributes": {
+      },
+      "text": "- 图索引和标量索引(B+tree)不一样，搜索到目标节点的路径不只有一条（[[osdi25-PipeANN.pdf#page=4&selection=139,0,145,9|osdi25-PipeANN, page 4]]）***多路径冗余性***\n\t- 不严格遵循这个顺序，只不过是换一个路径搜索，最终肯定是能够搜到正确结果的（但是有可能会延长搜索路径）\n\t- 而且BFS算法本质上也只是一个启发式算法，并不能确保找到的就是最优的路径\n- Trade-off\n\t- 等待当前的IO完成，再更新候选集，然后决定下一次IO\n\t- 基于现有的可能不够最优的候选集来决定下一次IO\n- 接受这种“次优”的决定，但是由于IO和计算overlap起来了，即使搜索路径变长了，整体的latency还是会降低",
+      "type": "text",
+      "width": 500,
+      "x": -1770,
+      "y": -1200
+    },
+    {
+      "height": 540,
+      "id": "a814b55c1d63a5ca",
+      "styleAttributes": {
+      },
+      "text": "<span style=\"color: green\">如何动态调整W</span>\n- 什么时候调整？\n\t- 在搜索进入Converge Phase的时候\n\t- $n_v$来表示candidate pool中第一个没有发起IO请求的顶点的索引下标。\n\t- 当$n_v$超过某个值的时候，指示进入了Converge Phase并且可以增大流水线宽度\n- 如何选择合适的W？\n\t- 静态方法：profiling构建已经召回的顶点数和W的映射关系\n\t- 动态方法（default）\n\t\t- 新指标：已经完成的IO中，读取上来的顶点仍然在candidate pool中的比例\n\t\t- 如果超过某个阈值（90%）W加一\n\t\t- 百分比越高说明当前宽度的pipeline读取上来的顶点都是有用的，可以继续尝试增加宽度",
+      "type": "text",
+      "width": 420,
+      "x": -4440,
+      "y": -100
+    },
+    {
+      "height": 210,
+      "id": "cd2415e3166d9565",
+      "styleAttributes": {
+      },
+      "text": "<span style=\"color: blue\">优化IO决策</span>\n- 当IO Pipeline没有打满的时候，只发起一个IO request，并且同时explore一个顶点的邻居\n\t- 保证每次发起IO request时参考的信息，最多落后W个IO。",
+      "type": "text",
+      "width": 420,
+      "x": -4440,
+      "y": -430
+    },
+    {
+      "height": 620,
+      "id": "06a6291f9295dde5",
+      "styleAttributes": {
+      },
+      "text": "Best First Search算法\n```python\ndef bfs(G, q, W):\n\t'''\n\tW: beam width(每次从候选集中选择最近的多少个节点)\n\t\tIO pipeline width\n\t'''\n\tP = {<s>} # candidate pool\n\tE = {} # explored pool\n\twhile P / E != {}:\n\t\tV = selet_top_from(P/E, W)\n\t\tread(V) # from memory or disk\n\t\tE.insert(V)\n\t\tfor nbr in V.nbrs:\n\t\t\t# Distance是通过内存中的pq后的顶点来计算的\n\t\t\tP.insert(<nbr, Distance(nbr, q)>)\n\t\tP = reserve_to(P, l) # 保留最近的l个节点\n```\n- <span style=\"color: blue\">先读取，再计算 => compute-IO顺序</span>\n\t- on-disk index中IO的开销远大于计算，是bottleneck\n\t- IO的时间没有和计算overlap\n- <span style=\"color: green\">从disk上读取节点是同步IO</span>\n\t- 同步IO的latency取决于最慢的那一个，IO pipeline是不能被打满的",
+      "type": "text",
+      "width": 515,
+      "x": -1020,
+      "y": -1160
+    },
+    {
+      "height": 160,
+      "id": "89833e60a597d515",
+      "styleAttributes": {
+      },
+      "text": "SSD特性\n- <span style=\"color: blue\">long latency(compared to in-memory IO)</span>\n- <span style=\"color: green\">asynchronous, parallel I/O</span>",
+      "type": "text",
+      "width": 340,
+      "x": -932,
+      "y": -380
+    },
+    {
+      "height": 270,
+      "id": "71ee3ba86e33fa10",
+      "styleAttributes": {
+      },
+      "text": "$\\text{PipeANN}$\n![[Pasted image 20250517125342.png]]\n\n",
+      "type": "text",
+      "width": 440,
+      "x": -3280,
+      "y": -1200
+    },
+    {
+      "color": "2",
+      "height": 620,
+      "id": "7f0f421b79217121",
+      "styleAttributes": {
+      },
+      "text": "两阶段搜索过程\n\n![[Pasted image 20250517134102.png]]\n- **<span style=\"color: orange\">Approach Phase</span>**：从起始点快速到达目标顶点附近\n\t- 这个阶段搜索的大部分顶点都不在top-k的范围中，需要的是快速抵达目标顶点的周围\n- **<span style=\"color: red\">Converge Phase</span>**：在目标顶点周围搜索，并慢慢远离\n\t- 这一阶段搜索到的顶点大部分都是目标顶点周围的top-k邻居\n\t- 由于在一个局部搜索，较宽的IO pipeline可以快速覆盖这个局部的所有顶点",
+      "type": "text",
+      "width": 400,
+      "x": -3600,
+      "y": 360
+    },
+    {
+      "color": "1",
+      "height": 360,
+      "id": "24e13fd479f519dc",
+      "styleAttributes": {
+      },
+      "text": "本质原因：IO waste（次优的IO决策）\n- <span style=\"color: green\">较宽的IO pipeline会导致一些次优的IO决策</span>\n\t- 相比于W=1的greedy search\n- <span style=\"color: blue\">将IO和计算overlap也会引入一些次优的IO决策</span>\n\t- 由于IO和计算并行进行，IO读取上的顶点可能没有及时被同时进行的计算使用，导致下一次IO决策时仍然基于比较落后的邻居信息，就会发出一些没有用的IO请求。",
+      "type": "text",
+      "width": 380,
+      "x": -2800,
+      "y": 20
+    },
+    {
+      "height": 600,
+      "id": "39fe49ec361ee7c5",
+      "styleAttributes": {
+      },
+      "text": "\n```python\n\ndef pipesearch(G, q, W):\n\tP = {<s>}\n\tE = {} # explored set\n\tU = {} # un-explored set\n\tQ = {} # size=W io pipeline\n\twhile P / E != {}:\n\t\t# IO Pipeline is not full\n\t\t# fill the pipeline based on\n\t\t# current in-memory candidate pool\n\t\tif Q.size() < W:\n\t\t\tV = select_top_from(P/E, W-Q.size())\n\t\t\tQ.insert(V)\n\t\t{ # overlap with IO\n\t\t\tv = select_top_from(U, 1)\n\t\t\tU.remove(v)\n\t\t\tE.insert(v)\n\t\t\tfor nbr in v.nbrs:\n\t\t\t\tP.insert(<nbr, Distance(nbr, q)>)\n\t\t\tP = reserve_to(P, l)\n\t\t\tF = get_finished_io(Q)\n\t\t\tQ.remove(F)\n\t\t\tU.insert(F)\n\t\t}\n\n```",
+      "type": "text",
+      "width": 520,
+      "x": -2680,
+      "y": -820
+    }
+  ]
+}

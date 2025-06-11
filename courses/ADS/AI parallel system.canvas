@@ -1,0 +1,79 @@
+{
+  "edges": [
+    {
+      "fromNode": "dd755de0888642ac",
+      "fromSide": "right",
+      "id": "4bf92b303d383d82",
+      "styleAttributes": {
+      },
+      "toNode": "6cd9d93534ae3eae",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "dd755de0888642ac",
+      "fromSide": "right",
+      "id": "08b264df5d990964",
+      "styleAttributes": {
+      },
+      "toNode": "65b4379895ede8e1",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "height": 60,
+      "id": "dd755de0888642ac",
+      "styleAttributes": {
+      },
+      "text": "Model Parallelism",
+      "type": "text",
+      "width": 280,
+      "x": -760,
+      "y": 80
+    },
+    {
+      "height": 200,
+      "id": "21f8e27569ae5523",
+      "styleAttributes": {
+      },
+      "text": "Data Parallel\n",
+      "type": "text",
+      "width": 280,
+      "x": -760,
+      "y": -320
+    },
+    {
+      "height": 400,
+      "id": "65b4379895ede8e1",
+      "styleAttributes": {
+      },
+      "text": "Pipeline Parallelism\n- 按照Layer进行划分，每一层部署在一个device上\n\t- Layer的输出相对于weight更小\n\t- ![[Pasted image 20250529131321.png]]\n- Pipeline: 增加batch数量，使得同一时间有多个batch被处理\n- ",
+      "type": "text",
+      "width": 620,
+      "x": -300,
+      "y": 200
+    },
+    {
+      "height": 60,
+      "id": "6cd9d93534ae3eae",
+      "styleAttributes": {
+      },
+      "text": "Tensor Parallelsim",
+      "type": "text",
+      "width": 260,
+      "x": -300,
+      "y": -40
+    },
+    {
+      "height": 600,
+      "id": "17b0e293cf5dec0b",
+      "styleAttributes": {
+      },
+      "text": "PTD Parallelism\n![[Pasted image 20250529135121.png]]",
+      "type": "text",
+      "width": 700,
+      "x": 480,
+      "y": 0
+    }
+  ]
+}

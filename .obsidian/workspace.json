@@ -1,0 +1,301 @@
+{
+  "main": {
+    "id": "afe74f940724c66a",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a71f5328ebbd957",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e95f380b4a4b9d0d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/ragbench/Project.canvas",
+                "viewState": {
+                  "x": 362.22934459694477,
+                  "y": 612.2043363671801,
+                  "zoom": -0.5215392669119193
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Project"
+            }
+          },
+          {
+            "id": "0d8f09115a47007a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/vectordb/VectorDB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "VectorDB"
+            }
+          },
+          {
+            "id": "85664c1770e6253b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/vectordb/DiskANN Code.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DiskANN Code"
+            }
+          },
+          {
+            "id": "8a110b2ad2fe9937",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "projects/vectordb/Project.canvas",
+                "viewState": {
+                  "x": 520,
+                  "y": -151.26574683924488,
+                  "zoom": -1.3824696368224134
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Project"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3a11468a3a954a30",
+    "type": "split",
+    "children": [
+      {
+        "id": "4922795165eb970b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f1dd6b9845c1984",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f4c6f44562fa7839",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Proj",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "81cf996c36df906f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "da071a40fd8935d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "e28598be5f4e1942",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "585c5d224f13c265",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "daily/2025-05-12.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025-05-12"
+            }
+          },
+          {
+            "id": "98f54956d0d96fd1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2025-05-07.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2025-05-07"
+            }
+          },
+          {
+            "id": "16588da7eb11b723",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a8f5ae6b5405fb34",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "daily/2025-05-12.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-05-12"
+            }
+          },
+          {
+            "id": "cc37103b3297cba1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "49656e9729aebca7",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-weread-plugin:同步微信读书笔记": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false
+    }
+  },
+  "active": "85664c1770e6253b",
+  "lastOpenFiles": [
+    "projects/vectordb/VectorDB.md",
+    "projects/vectordb/Project.canvas",
+    "projects/vectordb/DiskANN Code.md",
+    "projects/ragbench/Project.canvas",
+    "projects/vectordb/DiskANN Code.canvas",
+    "daily/2025-06-03.md",
+    "courses/Algorithm/Review.canvas",
+    "courses/Algorithm/常见问题.md",
+    "courses/Algorithm/Assignment6.md",
+    "imgs/projects/Pasted image 20250606013615.png",
+    "imgs/algorithm/Pasted image 20250608101408.png",
+    "imgs/algorithm/Pasted image 20250607215931.png",
+    "Excalidraw/Patterns.md",
+    "imgs/projects",
+    "Excalidraw/algorithm drawboard.md",
+    "daily/2025-05-29.md",
+    "daily/2025-05-27.md",
+    "daily/2025-05-13.md",
+    "daily/2025-05-26.md",
+    "Consensus.md",
+    "courses/ADS/AI parallel system.canvas",
+    "PDDS AdaptiveRAG.md",
+    "imgs/algorithm/Pasted image 20250602144825.png",
+    "notes/Testing Note.md",
+    "notes/ChinaSys.md",
+    "imgs/algorithm/Pasted image 20250602230818.png",
+    "Excalidraw/Drawing 2025-06-02 16.33.07.excalidraw.md",
+    "imgs/algorithm/Pasted image 20250524214750.png",
+    "imgs/algorithm",
+    "imgs/algorithm/Pasted image 20250601193107.png",
+    "Pasted image 20250601192708.png",
+    "imgs/algorithm/Pasted image 20250601185513.png",
+    "imgs/algorithm/Pasted image 20250601171135.png",
+    "courses/ADS/Graph parallel computation.canvas",
+    "papers/pdf/osdi25-PipeANN.pdf",
+    "imgs/chinasys",
+    "courses/Algorithm",
+    "papers/ACORN.md",
+    "papers/PipeANN.canvas",
+    "papers/pdf",
+    "papers",
+    "Papers.md",
+    "PipeANN note.md",
+    "Excalidraw/PipeANN.md",
+    "imgs/pipeann",
+    "图索引.md",
+    "imgs",
+    "PipeANN.md",
+    "Excalidraw",
+    "daily/2025-05-12.md",
+    "daily/2025-05-08.md",
+    "canvas/项目梳理.canvas",
+    "daily/2025-05-10.md"
+  ]
+}

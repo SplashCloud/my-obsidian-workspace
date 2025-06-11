@@ -1,0 +1,358 @@
+{
+  "edges": [
+    {
+      "fromNode": "c1fe873dd734de84",
+      "fromSide": "right",
+      "id": "2d3a2f82e5dc038e",
+      "styleAttributes": {
+      },
+      "toNode": "9cebaf35fe343e22",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "68fc1c5425d5ff8d",
+      "fromSide": "right",
+      "id": "dac2aba2376899e2",
+      "styleAttributes": {
+      },
+      "toNode": "56edc6e5aa736ebb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "68b7f560ac74959f",
+      "fromSide": "right",
+      "id": "46e3d0d24203f4bb",
+      "styleAttributes": {
+      },
+      "toNode": "56edc6e5aa736ebb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "7bae7211651d7f96",
+      "fromSide": "right",
+      "id": "b9a24db1530b6b43",
+      "styleAttributes": {
+      },
+      "toNode": "56edc6e5aa736ebb",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "c1fe873dd734de84",
+      "fromSide": "top",
+      "id": "dd65550aab199be7",
+      "styleAttributes": {
+      },
+      "toNode": "56edc6e5aa736ebb",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "b7ad5831f8b6b0d7",
+      "fromSide": "left",
+      "id": "7e35d2bc99ed48e8",
+      "styleAttributes": {
+      },
+      "toNode": "56edc6e5aa736ebb",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "b7ad5831f8b6b0d7",
+      "fromSide": "right",
+      "id": "3a3a6a8122fe1d72",
+      "styleAttributes": {
+      },
+      "toNode": "173a95b4890a7daa",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b7ad5831f8b6b0d7",
+      "fromSide": "right",
+      "id": "3b13f547104e1a91",
+      "styleAttributes": {
+      },
+      "toNode": "32dbbc212410b4f3",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "56edc6e5aa736ebb",
+      "fromSide": "top",
+      "id": "ebea8aca423b6dfe",
+      "styleAttributes": {
+      },
+      "toNode": "52f8a41d7e4a185c",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "68b7f560ac74959f",
+      "fromSide": "left",
+      "id": "f6973f8784f97f8d",
+      "styleAttributes": {
+      },
+      "toNode": "a231e15cd1915bf0",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "68b7f560ac74959f",
+      "fromSide": "left",
+      "id": "d855750f7feb2a61",
+      "styleAttributes": {
+      },
+      "toNode": "ecd00d8e9b13fe96",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "9cebaf35fe343e22",
+      "fromSide": "right",
+      "id": "cd9a480070f78f1e",
+      "styleAttributes": {
+      },
+      "toNode": "04d57dbff60bfda6",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "777b7a6895be9723",
+      "fromSide": "top",
+      "id": "4c7e1b1a8e142ea5",
+      "styleAttributes": {
+      },
+      "toNode": "c1fe873dd734de84",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "92bb13291b3a66ab",
+      "fromSide": "left",
+      "id": "5c8158f75a2d3f16",
+      "styleAttributes": {
+      },
+      "toNode": "54815fb5f324d91f",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "56edc6e5aa736ebb",
+      "fromSide": "top",
+      "id": "e138cf1d9d149d78",
+      "styleAttributes": {
+      },
+      "toNode": "92bb13291b3a66ab",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "52f8a41d7e4a185c",
+      "fromSide": "left",
+      "id": "17e25464d6257c3f",
+      "styleAttributes": {
+      },
+      "toNode": "92bb13291b3a66ab",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "c1fe873dd734de84",
+      "fromSide": "bottom",
+      "id": "7e8b8789cb21e019",
+      "styleAttributes": {
+      },
+      "toNode": "42025901e1f474aa",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 540,
+      "id": "56edc6e5aa736ebb",
+      "styleAttributes": {
+      },
+      "text": "主线：构建一套针对Agent Workflow Service在RAG场景下的benchmark\n\n- 对象：不同的Agent workflow service\n\t- 比如：Google Agent Engine、AWS Bedrock Flow、Coze\n- 评测维度\n\t- performance: lantency + throughput\n\t- cost: 每个request所需要的金钱开销\n\t- scalability: performance随着cost的变化\n\t- accuracy, functionality\n- 内容\n\t- 简化之后的RAG应用 => RAG workflow\n\t\t- 需要包含不同的类型\n\t- 数据集（应用场景对应的真实数据集）\n\t- 运行框架和测试框架\n\t\t- 运行框架：RAG workflow可以快速地部署在不同的云服务上\n\t\t- 测试框架：发送测试任务、收集测试数据\n- 目标：不同的service实现和运行不同类型的RAG workflow会有不同的表现",
+      "type": "text",
+      "width": 580,
+      "x": -280,
+      "y": -260
+    },
+    {
+      "height": 570,
+      "id": "c1fe873dd734de84",
+      "styleAttributes": {
+      },
+      "text": "Key Insight(Benchmark的目标是否成立)\n- 目的：验证不同pattern的workflow是否在不同Service上表现不一样\n- Application: 基于不同的pattern，构造最简单的workflow，不需要考虑语义\n- DataSet: 基于一个问答任务，选择clapnq数据集\n\n问题：\n- 不考虑语义的情况下，同一个workflow中不同的RAG之间的关系应该如何确定？\n\t- 不考虑它们之间的联系，每个RAG完成独立的任务 => 但是RAG之间的数据通信在某些pattern中可能占据不小的开销。\n\t- 应该考虑它们之间的联系，可以尝试mock数据通信。\n- 测试的时候如何获取分阶段的latency呢？\n\t- 使用云服务内部的trace？是否会有额外的overhead？",
+      "type": "text",
+      "width": 580,
+      "x": -280,
+      "y": 380
+    },
+    {
+      "height": 420,
+      "id": "b7ad5831f8b6b0d7",
+      "styleAttributes": {
+      },
+      "text": "认识这些Agent Workflow Service（RAG场景下）\n- 提供了哪些组件，是如何实现的\n\t- 如何实现workflow的执行\n\t- 如何调用大模型，支持哪些大模型\n\t- 如何调用向量检索\n\t\t- 是使用另外的服务，还是集成在当前的service中\n- 收费标准是什么\n\t- 基础workflow\n\t- 大模型\n\t- 向量存储和检索\n- 速率限额情况\n- 大致的架构长什么样",
+      "type": "text",
+      "width": 440,
+      "x": 420,
+      "y": -260
+    },
+    {
+      "height": 340,
+      "id": "7bae7211651d7f96",
+      "styleAttributes": {
+      },
+      "text": "Testing Framework\n- 提供什么的能力\n\t1. 构造并发送不同类型的请求\n\t2. 收集测试数据\n\t3. 分析、处理数据\n\t4. 画图",
+      "type": "text",
+      "width": 380,
+      "x": -820,
+      "y": 560
+    },
+    {
+      "height": 330,
+      "id": "68fc1c5425d5ff8d",
+      "styleAttributes": {
+      },
+      "text": "RAG 应用\n- 涵盖不同且全面的类型，划分的标准是什么？\n\t- 功能、workflow pattern\n- workflow pattern\n\t- Naive RAG\n\t- Parallel\n\t- Map-Reduce\n\t- Loop(Unbounded)\n\t- Consecutive",
+      "type": "text",
+      "width": 380,
+      "x": -820,
+      "y": -360
+    },
+    {
+      "height": 340,
+      "id": "68b7f560ac74959f",
+      "styleAttributes": {
+      },
+      "text": "Running Framework\n- 提供什么的能力\n\t1. 管理benchmark中的RAG workflow，方便增删\n\t2. 将RAG workflow快速部署和运行在不同的Service上\n\n问题：\n- 有些service没有提供构建和部署的SDK怎么办？",
+      "type": "text",
+      "width": 380,
+      "x": -820,
+      "y": 110
+    },
+    {
+      "height": 460,
+      "id": "173a95b4890a7daa",
+      "styleAttributes": {
+      },
+      "text": "Google Agent Engine\n- 组件：\n\t- 纯编码\n\t- 支持LangGraph，LangChain等框架（提供的SDK封装了这些框架）\n- 收费：\n\t- 基础workflow开销（docker容器）\n\t\t- $0.0994/vCPU-Hour\n\t\t- $0.0105/GiB-Hour\n\t- 大模型\n\t- 向量存储和检索\n- 限额\n\t- Query/StreamQuery Vertex AI Agent Engine = 60 per minute",
+      "type": "text",
+      "width": 420,
+      "x": 970,
+      "y": -520
+    },
+    {
+      "height": 380,
+      "id": "32dbbc212410b4f3",
+      "styleAttributes": {
+      },
+      "text": "Coze\n- 主要的功能是创建智能体应用，其中可以创建工作流来实现RAG\n- 组件\n\t- 大模型\n\t- 知识库检索\n\t\t- （需要创建知识库）\n\t\t\t- 解析策略：可以支持图片、表格等元素的解析\n\t\t\t- 分段策略：分段标识符、分段最大长度、分段重叠度、预处理规则（删除url，邮箱，空格等）\n\t\t\t- 存储配置：平台默认；火山云搜索服务（企业）\n\t\t- 查询改写\n\t\t- 结果重排\n- 收费\n\t- 运行基础的workflow不需要收费\n\t- ",
+      "type": "text",
+      "width": 420,
+      "x": 1220,
+      "y": -20
+    },
+    {
+      "file": "Excalidraw/Patterns.md",
+      "height": 660,
+      "id": "9cebaf35fe343e22",
+      "styleAttributes": {
+      },
+      "type": "file",
+      "width": 560,
+      "x": 420,
+      "y": 290
+    },
+    {
+      "height": 180,
+      "id": "a231e15cd1915bf0",
+      "styleAttributes": {
+      },
+      "text": "Google Agent Engine\n- 本质上是构建一个LangGraph类型的Graph\n\t- 很难做到单个的抽象的操作符映射到具体的操作符，只能在图层面进行整体映射",
+      "type": "text",
+      "width": 420,
+      "x": -1400,
+      "y": 110
+    },
+    {
+      "height": 90,
+      "id": "ecd00d8e9b13fe96",
+      "styleAttributes": {
+      },
+      "text": "支持通过json格式来定义workflow，框架转换成对应的Graph结构",
+      "type": "text",
+      "width": 420,
+      "x": -1400,
+      "y": 405
+    },
+    {
+      "height": 180,
+      "id": "04d57dbff60bfda6",
+      "styleAttributes": {
+      },
+      "text": "最后是否就是和LLM调用次数成正比？",
+      "type": "text",
+      "width": 340,
+      "x": 1180,
+      "y": 560
+    },
+    {
+      "height": 220,
+      "id": "92bb13291b3a66ab",
+      "styleAttributes": {
+      },
+      "text": "- 服务的黑盒性质\n\t- 难以探究服务内部机制\n\t- 测试数据结果难以breakdown\n- 服务成熟度（qps限制）\n\t- 与云数据库等成熟云服务相比，完善程度和标准化水平还不够",
+      "type": "text",
+      "width": 440,
+      "x": -400,
+      "y": -900
+    },
+    {
+      "height": 220,
+      "id": "54815fb5f324d91f",
+      "styleAttributes": {
+      },
+      "text": "- 测试的关注点 => 端到端的指标上\n\t- latency/throughput 以及 开销\n- 测试要更加清晰、多样、便于分析\n- 在当前限制之下进行测试和分析，同时能够兼容后续的变化，比如针对高qps的测试等",
+      "type": "text",
+      "width": 400,
+      "x": -980,
+      "y": -900
+    },
+    {
+      "height": 140,
+      "id": "52f8a41d7e4a185c",
+      "styleAttributes": {
+      },
+      "text": "- 是否有意义？\n\t- 解决了什么问题？\n\t- 什么场景会使用到？\n\t- 评测结果有什么帮助？",
+      "type": "text",
+      "width": 420,
+      "x": 280,
+      "y": -750
+    },
+    {
+      "height": 480,
+      "id": "108a3b2e34fcd262",
+      "styleAttributes": {
+      },
+      "text": "如何进行测试/需要注意的方面：\n- 明确输入和输出是什么？\n\t- 输入\n\t\t- 用户query\n\t\t- 语料库\n\t- 输出\n\t\t- 文本回答\n- 关注的指标（端到端）\n\t- Latency\n\t- Throughput（受限）\n- 测试方式\n\t- 在一段时间内连续稳定地发送请求（关注单个请求的基准延迟）\n\t- 按照每秒X个请求的速率来发送请求（探索并发处理能力）",
+      "type": "text",
+      "width": 440,
+      "x": -980,
+      "y": 1020
+    },
+    {
+      "height": 600,
+      "id": "42025901e1f474aa",
+      "styleAttributes": {
+      },
+      "text": "初步结果\n![[Pasted image 20250606013615.png]]",
+      "type": "text",
+      "width": 730,
+      "x": 410,
+      "y": 1080
+    },
+    {
+      "height": 280,
+      "id": "777b7a6895be9723",
+      "styleAttributes": {
+      },
+      "text": "具体的测试计划",
+      "type": "text",
+      "width": 580,
+      "x": -400,
+      "y": 1320
+    }
+  ]
+}
