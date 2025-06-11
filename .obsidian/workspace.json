@@ -44,12 +44,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/vectordb/DiskANN Code.md",
+                "file": "courses/ADS/ADS-Review.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DiskANN Code"
+              "title": "ADS-Review"
             }
           },
           {
@@ -206,12 +206,22 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
             "id": "49656e9729aebca7",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "a5dadef9a68f09be",
             "type": "leaf",
             "state": {
               "type": "planner-timeline",
@@ -244,9 +254,11 @@
   },
   "active": "85664c1770e6253b",
   "lastOpenFiles": [
+    "courses/ADS/AI parallel system.canvas",
+    "courses/ADS/ADS-Review.md",
+    "projects/vectordb/DiskANN Code.md",
     "projects/vectordb/VectorDB.md",
     "projects/vectordb/Project.canvas",
-    "projects/vectordb/DiskANN Code.md",
     "projects/ragbench/Project.canvas",
     "projects/vectordb/DiskANN Code.canvas",
     "daily/2025-06-03.md",
@@ -264,7 +276,6 @@
     "daily/2025-05-13.md",
     "daily/2025-05-26.md",
     "Consensus.md",
-    "courses/ADS/AI parallel system.canvas",
     "PDDS AdaptiveRAG.md",
     "imgs/algorithm/Pasted image 20250602144825.png",
     "notes/Testing Note.md",
@@ -295,7 +306,6 @@
     "Excalidraw",
     "daily/2025-05-12.md",
     "daily/2025-05-08.md",
-    "canvas/项目梳理.canvas",
-    "daily/2025-05-10.md"
+    "canvas/项目梳理.canvas"
   ]
 }
