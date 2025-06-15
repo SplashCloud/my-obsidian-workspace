@@ -62,10 +62,26 @@ pq_query_scratch->aligned_query_float = pq_query_scratch->rotated_query = query
 		- 删除`deletion_set`中的点
 	- `final_merge`/`trigger_merge`
 		- `save_del_set`
-			- 
+			- 将`active_delete_set`切换到一个空的`deletion_set`
+			- 将原来的`deletion_set`中的点加到一个buffer中（后面将其在disk index中删除）
 		- `switch_index`
+			- 切换到一个空的`mem_index`并且save上一个`mem_index`的内容（服务新请求）
+			- 
 ### tests
 
 `test_concurr_merge_insert`
 - `single_file`这个flag到底指示了什么？
-- 
+
+
+---
+1. 代码相关
+	- merge的代码阅读
+		- 插入的时候用什么样的配置进行的搜索
+		- 具体是如何删除的
+2. 怎么快速搭建测试环境，进行测试，使得协作更加方便！
+
+---
+为什么在内存中都是两个`deletion_set`和两个`mem_index`?
+- 保证merge的过程中，正常的请求可以同时被服务
+- `_active_delete_set`指示哪个`deletion_set`处于活跃状态，可以serve delete request
+- 在merge的时候，`_active_delete_set`会进行切换
