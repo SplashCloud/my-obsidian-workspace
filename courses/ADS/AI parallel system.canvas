@@ -17,6 +17,42 @@
       },
       "toNode": "65b4379895ede8e1",
       "toSide": "left"
+    },
+    {
+      "fromNode": "21f8e27569ae5523",
+      "fromSide": "right",
+      "id": "c6958d6d553226e9",
+      "styleAttributes": {
+      },
+      "toNode": "cf83e92729ec2911",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "cf83e92729ec2911",
+      "fromSide": "right",
+      "id": "a0e2add595481732",
+      "styleAttributes": {
+      },
+      "toNode": "17b0e293cf5dec0b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6cd9d93534ae3eae",
+      "fromSide": "right",
+      "id": "2a432ab83d58beaf",
+      "styleAttributes": {
+      },
+      "toNode": "17b0e293cf5dec0b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "65b4379895ede8e1",
+      "fromSide": "right",
+      "id": "03a876e2b299af4f",
+      "styleAttributes": {
+      },
+      "toNode": "17b0e293cf5dec0b",
+      "toSide": "left"
     }
   ],
   "nodes": [
@@ -32,7 +68,29 @@
       "y": 80
     },
     {
-      "height": 200,
+      "height": 1060,
+      "id": "65b4379895ede8e1",
+      "styleAttributes": {
+      },
+      "text": "Pipeline Parallelism\n- 按照Layer进行划分，每一层部署在一个device上\n- One-by-One![[Pasted image 20250529131321.png]]\n\t- Naive. 每个batch结束之后开始下一个batch(下一个batch才能使用到最新的模型参数)\n\t- GPU上会存在bubble\n- Multi-batching![[Pasted image 20250612122526.png]]\n\t- T1,T2,T3的执行都基于**stale model state**\n\t- T1,T2,T3的backward operation被推迟\n- Micro-batching![[Pasted image 20250612122854.png]]\n\t- 将一个batch划分成多个micro-batch，在micro-batch上进行并行，减少bubble数量",
+      "type": "text",
+      "width": 620,
+      "x": -300,
+      "y": 200
+    },
+    {
+      "height": 220,
+      "id": "6cd9d93534ae3eae",
+      "styleAttributes": {
+      },
+      "text": "Tensor Parallelsim\n- 将模型的某一个层的参数进行切分（当某一层的参数过大时）",
+      "type": "text",
+      "width": 620,
+      "x": -300,
+      "y": -410
+    },
+    {
+      "height": 60,
       "id": "21f8e27569ae5523",
       "styleAttributes": {
       },
@@ -40,40 +98,29 @@
       "type": "text",
       "width": 280,
       "x": -760,
-      "y": -320
+      "y": -700
     },
     {
-      "height": 480,
-      "id": "65b4379895ede8e1",
+      "height": 420,
+      "id": "cf83e92729ec2911",
       "styleAttributes": {
       },
-      "text": "Pipeline Parallelism\n- 按照Layer进行划分，每一层部署在一个device上\n\t- Layer的输出相对于weight更小\n\t- ![[Pasted image 20250529131321.png]]\n- Pipeline: 增加batch数量，使得同一时间有多个batch被处理\n- ",
+      "text": "模型有多个副本，然后将训练数据分成多份在不同的副本上同时训练。\n参数如何更新？AllReduce\n- PS\n- De-centrialized\n- Ring AllReduce",
       "type": "text",
       "width": 620,
       "x": -300,
-      "y": 200
+      "y": -1060
     },
     {
-      "height": 120,
-      "id": "6cd9d93534ae3eae",
-      "styleAttributes": {
-      },
-      "text": "Tensor Parallelsim",
-      "type": "text",
-      "width": 260,
-      "x": -300,
-      "y": -40
-    },
-    {
-      "height": 600,
+      "height": 520,
       "id": "17b0e293cf5dec0b",
       "styleAttributes": {
       },
       "text": "PTD Parallelism\n![[Pasted image 20250529135121.png]]",
       "type": "text",
       "width": 700,
-      "x": 480,
-      "y": 0
+      "x": 780,
+      "y": -450
     }
   ]
 }

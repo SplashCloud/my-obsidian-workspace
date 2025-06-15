@@ -60,6 +60,10 @@ pq_query_scratch->aligned_query_float = pq_query_scratch->rotated_query = query
 		- 磁盘：`disk_index->cached_beam_search()`
 		- 内存：`mem_index->search()`
 		- 删除`deletion_set`中的点
+	- `final_merge`/`trigger_merge`
+		- `save_del_set`
+			- 
+		- `switch_index`
 ### tests
 
 `test_concurr_merge_insert`

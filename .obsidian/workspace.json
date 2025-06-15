@@ -30,12 +30,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/vectordb/VectorDB.md",
+                "file": "projects/vectordb/DiskANN Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VectorDB"
+              "title": "DiskANN Code"
             }
           },
           {
@@ -60,9 +60,9 @@
               "state": {
                 "file": "projects/vectordb/Project.canvas",
                 "viewState": {
-                  "x": 520,
-                  "y": -151.26574683924488,
-                  "zoom": -1.3824696368224134
+                  "x": 544.1654981318843,
+                  "y": 62.84628710350529,
+                  "zoom": -1.1288943728986551
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 296.5046920776367,
+    "collapsed": true
   },
   "right": {
     "id": "da071a40fd8935d5",
@@ -252,22 +253,32 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "85664c1770e6253b",
+  "active": "0d8f09115a47007a",
   "lastOpenFiles": [
     "courses/ADS/AI parallel system.canvas",
+    "imgs/ads/Pasted image 20250529131321.png",
+    "imgs/ads/Pasted image 20250529135121.png",
+    "imgs/ads/Pasted image 20250612122526.png",
+    "imgs/ads/Pasted image 20250612122854.png",
+    "imgs/algorithm/Pasted image 20250524214750.png",
+    "imgs/algorithm/Pasted image 20250527001736.png",
+    "imgs/algorithm/Pasted image 20250527004749.png",
+    "imgs/algorithm/Pasted image 20250601125915.png",
+    "imgs/algorithm/Pasted image 20250601154200.png",
+    "imgs/algorithm/Pasted image 20250601171135.png",
     "courses/ADS/ADS-Review.md",
-    "projects/vectordb/DiskANN Code.md",
-    "projects/vectordb/VectorDB.md",
     "projects/vectordb/Project.canvas",
+    "courses/ADS/Graph parallel computation.canvas",
+    "imgs/ads",
+    "Excalidraw/AI Parallelism.md",
+    "projects/vectordb/VectorDB.md",
+    "projects/vectordb/DiskANN Code.md",
     "projects/ragbench/Project.canvas",
     "projects/vectordb/DiskANN Code.canvas",
     "daily/2025-06-03.md",
     "courses/Algorithm/Review.canvas",
     "courses/Algorithm/常见问题.md",
     "courses/Algorithm/Assignment6.md",
-    "imgs/projects/Pasted image 20250606013615.png",
-    "imgs/algorithm/Pasted image 20250608101408.png",
-    "imgs/algorithm/Pasted image 20250607215931.png",
     "Excalidraw/Patterns.md",
     "imgs/projects",
     "Excalidraw/algorithm drawboard.md",
@@ -277,18 +288,10 @@
     "daily/2025-05-26.md",
     "Consensus.md",
     "PDDS AdaptiveRAG.md",
-    "imgs/algorithm/Pasted image 20250602144825.png",
     "notes/Testing Note.md",
     "notes/ChinaSys.md",
-    "imgs/algorithm/Pasted image 20250602230818.png",
     "Excalidraw/Drawing 2025-06-02 16.33.07.excalidraw.md",
-    "imgs/algorithm/Pasted image 20250524214750.png",
     "imgs/algorithm",
-    "imgs/algorithm/Pasted image 20250601193107.png",
-    "Pasted image 20250601192708.png",
-    "imgs/algorithm/Pasted image 20250601185513.png",
-    "imgs/algorithm/Pasted image 20250601171135.png",
-    "courses/ADS/Graph parallel computation.canvas",
     "papers/pdf/osdi25-PipeANN.pdf",
     "imgs/chinasys",
     "courses/Algorithm",
@@ -303,9 +306,7 @@
     "图索引.md",
     "imgs",
     "PipeANN.md",
-    "Excalidraw",
     "daily/2025-05-12.md",
-    "daily/2025-05-08.md",
     "canvas/项目梳理.canvas"
   ]
 }
